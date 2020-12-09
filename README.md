@@ -60,8 +60,8 @@ The syntax used to logistic regression is as follows:
 from sklearn.linear_model import LogisticRegression
 
 # Create an instance of the class
-# The l2 penalty refers to the regularisation and c is the regularisation, also known as inverse lambda. Therefore,
-# the higher the value for c, the lower the penalty.
+# The l2 penalty refers to the regularisation and c is the regularisation, also known as inverse lambda. 
+# Therefore, the higher the value for c, the lower the penalty.
 lr = LogisticRegression(penalty = 'l2', c = 10)
 
 # Fitting the instance on the data and then predicting
