@@ -45,10 +45,10 @@ The diagram below is of a Sigmoid function, which is used for Logistic regressio
 
 <p align="center"> <img width="600" src= "/Pics/W11.png"> </p>
 
-The derivation from the *Logistic Function* to the *Odds Ratio* given below highlights the relationship between the Logistic and Linear regression. Notice that the coefficient of the exponential is a linear line (in the form of Y = mX + c, where m and c and learn't coefficients).
+The derivation from the *Logistic Function* to the *Odds Ratio* given below highlights the relationship between the Logistic and Linear regression. Notice that the coefficient of the exponential is a linear line (in the form of Y = mX + c, where m and c are learnt coefficients).
 
 <p align="center"> <img width="600" src= "/Pics/W12.gif"> </p>
 
 **Note:** 
 - P(x) is the probability of a particular observation x belonging to that class.
-- The log odds demonstrates how a unit increase or decrease in our x-values will change our log odds in a linear fashion, according to the coefficient beta1 we have learn't.
+- The log odds demonstrates how a unit increase or decrease in our x-values will change our log odds in a linear fashion, according to the coefficient beta1 we have learnt.
