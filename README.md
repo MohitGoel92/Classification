@@ -39,4 +39,4 @@ The most common models used for classification are:
 
 Logistic Regression is a type of regression that models the probability of a certain class occuring given other independent variables. It uses a logistic or logit function to model a dependent variable. It is a very common predictive model because of its high interpretability.
 
-<p align="center"> <img width="200" src= "/Pics/w11.png"> </p>
+<p align="center"> <img width="200" src= "/Pics/W11.png"> </p>
