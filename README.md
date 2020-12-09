@@ -45,4 +45,4 @@ The diagram below is of a Sigmoid function, which is used for Logistic regressio
 
 <p align="center"> <img width="600" src= "/Pics/W11.png"> </p>
 
-
+<p align="center"> <img width="600" src= "/Pics/W12.png"> </p>
