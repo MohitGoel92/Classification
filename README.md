@@ -52,3 +52,25 @@ The derivation from the *Logistic Function* to the *Odds Ratio* given below high
 **Note:** 
 - P(x) is the probability of a particular observation x belonging to that class.
 - The log odds demonstrates how a unit increase or decrease in our x-values will change our log odds in a linear fashion, according to the coefficient beta1 we have learnt.
+
+The syntax used to logistic regression is as follows:
+
+```
+# Importing the class containing the classification method
+from sklearn.linear_model import LogisticRegression
+
+# Create an instance of the class
+# The l2 penalty refers to the regularisation and c is the regularisation, also known as inverse lambda. Therefore,
+# the higher the value for c, the lower the penalty.
+lr = LogisticRegression(penalty = 'l2', c = 10)
+
+# Fitting the instance on the data and then predicting
+lr.fit(X_train, y_train)
+y_pred = lr.predict(X_test)
+
+# Viewing the output fitted coefficients
+lr.coef_
+
+# Tuning the regularisation parameters with cross-validation
+LogisticRegressionCV
+```
