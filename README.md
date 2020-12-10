@@ -122,3 +122,13 @@ The area under the curve of the ROC plot is a very common method of selecting a 
 <p align="center"> <img width="500" src= "/Pics/W20.png"> </p>
 
 From the diagram above, we state that AUC of 0.9 means high true positives and low false positives.
+
+**Note:** Is it better to use the ROC for data with balanced classes.
+
+## Precision-Recall Curve
+
+This curve measures the trade-off between precision and recall. The diagram below illustrates this curve.
+
+**Note:** The curve will usually be decreasing.
+
+<p align="center"> <img width="500" src= "/Pics/W21.png"> </p>
