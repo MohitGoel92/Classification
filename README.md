@@ -131,4 +131,4 @@ This curve measures the trade-off between precision and recall. The diagram belo
 
 **Note:** The curve will usually be decreasing.
 
-<p align="center"> <img width="500" src= "/Pics/W21.png"> </p>
+<p align="center"> <img width="450" src= "/Pics/W21.png"> </p>
