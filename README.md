@@ -116,3 +116,9 @@ The receiver operating characteristic (ROC) plots the true positive rate (sensit
 The diagram below illustrates the ROC being evaluated at all possible thresholds.
 
 <p align="center"> <img width="500" src= "/Pics/W19.png"> </p>
+
+The area under the curve of the ROC plot is a very common method of selecting a classification method. The ROC under the curve is also referred to as ROC AUC, which gives a measure of how well we are seperating the two classes. This is illustrated by the diagram below.
+
+<p align="center"> <img width="500" src= "/Pics/W20.png"> </p>
+
+From the diagram above, we state that AUC of 0.9 means high true positives and low false positives.
