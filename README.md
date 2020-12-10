@@ -115,4 +115,4 @@ The receiver operating characteristic (ROC) plots the true positive rate (sensit
 
 The diagram below illustrates the ROC being evaluated at all possible thresholds.
 
-<p align="center"> <img width="350" src= "/Pics/W19.png"> </p>
+<p align="center"> <img width="500" src= "/Pics/W19.png"> </p>
