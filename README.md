@@ -53,7 +53,7 @@ The derivation from the *Logistic Function* to the *Odds Ratio* given below high
 - P(x) is the probability of a particular observation x belonging to that class.
 - The log odds demonstrates how a unit increase or decrease in our x-values will change our log odds in a linear fashion, according to the coefficient beta1 we have learnt.
 
-The syntax used to logistic regression is as follows:
+The syntax used with logistic regression is as follows:
 
 ```
 # Importing the class containing the classification method
@@ -123,7 +123,7 @@ The area under the curve of the ROC plot is a very common method of selecting a 
 
 From the diagram above, we state that AUC of 0.9 means high true positives and low false positives.
 
-**Note:** Is it better to use the ROC for data with balanced classes.
+**Note:** It is better to use the ROC for data with balanced classes.
 
 ## Precision-Recall Curve
 
@@ -132,3 +132,19 @@ This curve measures the trade-off between precision and recall. The diagram belo
 **Note:** The curve will usually be decreasing.
 
 <p align="center"> <img width="450" src= "/Pics/W21.png"> </p>
+
+**Note:** It is better to use the precision-recall curve for data with imbalanced classes.
+
+The syntax used for error metrics is as follow:
+
+```
+# Importing the desired error function
+from sklearn.metrics import accuracy_score
+
+# Calculating the error on the test and predicted data sets
+accuracy_value = accuracy_score(y_test, y_pred)
+
+# List of error metrics and diagnostic tools:
+from skelarn.metrics import precision_score, recall_score, f1_score, roc_auc_score, 
+                            confusion_matrix, roc_curve, precision_recall_curve
+```
