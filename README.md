@@ -135,7 +135,7 @@ This curve measures the trade-off between precision and recall. The diagram belo
 
 **Note:** It is better to use the precision-recall curve for data with imbalanced classes.
 
-The syntax used for error metrics is as follow:
+The syntax used for error metrics is as follows:
 
 ```
 # Importing the desired error function
