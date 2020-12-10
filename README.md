@@ -77,4 +77,10 @@ LogisticRegressionCV
 
 ## Confusion Matrix
 
+A confusion matrix tabulates true positives, false negatives, false positives and true negatives. The below is a diagrammatic representation of a confusion matrix.
+
 <p align="center"> <img width="500" src= "/Pics/W13.png"> </p>
+
+Accuracy is defined as the ratio of true positives and true negatives divided by the total number of observations. It is a measure related to predicting correctly positive and negatives instances.
+
+<p align="center"> <img width="500" src= "/Pics/W14.png"> </p>
