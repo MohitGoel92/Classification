@@ -87,4 +87,4 @@ Accuracy is defined as the ratio of true positives and true negatives divided by
 
 Recall or sensitivity identifies the ratio of true positives divided by the total number of actual positives. It quantifies the percentage of positive instances correctly identified. The formula is given below:
 
-<p align="center"> <img width="400" src= "/Pics/W14.png"> </p>
+<p align="center"> <img width="400" src= "/Pics/W15.png"> </p>
