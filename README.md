@@ -74,3 +74,7 @@ lr.coef_
 # Tuning the regularisation parameters with cross-validation
 LogisticRegressionCV
 ```
+
+## Confusion Matrix
+
+<p align="center"> <img width="300" src= "/Pics/W13.png"> </p>
