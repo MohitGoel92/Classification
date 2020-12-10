@@ -107,4 +107,4 @@ Specificity is the ratio of true negatives divided by the total number of actual
 
 The F1 Score or *Harmonic Mean* captures the tradeoff between Recall and Precision. Optimising F1 will not allow for the corner cases (true positives and true negatives) to have a misleading implication on accuracy if, for instance, everything was to be predicted as positive or negative. The formula is given below.
 
-<p align="center"> <img width="280" src= "/Pics/W18.png"> </p>
+<p align="center"> <img width="350" src= "/Pics/W18.png"> </p>
