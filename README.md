@@ -83,4 +83,4 @@ A confusion matrix tabulates true positives, false negatives, false positives an
 
 Accuracy is defined as the ratio of true positives and true negatives divided by the total number of observations. It is a measure related to predicting correctly positive and negatives instances.
 
-<p align="center"> <img width="500" src= "/Pics/W14.png"> </p>
+<p align="center"> <img width="400" src= "/Pics/W14.png"> </p>
