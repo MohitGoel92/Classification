@@ -91,4 +91,4 @@ Recall or sensitivity identifies the ratio of true positives divided by the tota
 
 Precision is the ratio of true positives divided by the total of predicted positives. The closer this value is to 1.0, the better job the model does at identifying only positive instances. The formula is given below:
 
-<p align="center"> <img width="300" src= "/Pics/W16.png"> </p>
+<p align="center"> <img width="280" src= "/Pics/W16.png"> </p>
