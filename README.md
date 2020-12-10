@@ -81,18 +81,26 @@ A confusion matrix tabulates true positives, false negatives, false positives an
 
 <p align="center"> <img width="500" src= "/Pics/W13.png"> </p>
 
-Accuracy is defined as the ratio of true positives and true negatives divided by the total number of observations. It is a measure related to predicting correctly positive and negatives instances. The formula is given below:
+Accuracy is defined as the ratio of true positives and true negatives divided by the total number of observations. It is a measure related to correctly predicting positive and negatives instances. The formula is given below.
 
 <p align="center"> <img width="400" src= "/Pics/W14.png"> </p>
 
-Recall or sensitivity identifies the ratio of true positives divided by the total number of actual positives. It quantifies the percentage of positive instances correctly identified. The formula is given below:
+Recall or sensitivity identifies the ratio of true positives divided by the total number of actual positives. It quantifies the percentage of positive instances correctly identified. In other words, for all the positive cases how many did the model predict correctly. The formula is given below.
 
 <p align="center"> <img width="400" src= "/Pics/W15.png"> </p>
 
-Precision is the ratio of true positives divided by the total of predicted positives. The closer this value is to 1.0, the better job the model does at identifying only positive instances. The formula is given below:
+**Note:** Although this portrays the overall model accuracy, this can be thrown off or misleading by heavily skewed data.
+
+Precision is the ratio of true positives divided by the total of predicted positives. In other words, for all the positive predictions how many did the model get correct. The closer this value is to 1.0, the better job the model does at identifying only positive instances. The formula is given below.
 
 <p align="center"> <img width="280" src= "/Pics/W16.png"> </p>
 
-Specificity is the ratio of true negatives divided by the total number of actual negatives. The closer this value is to 1.0, the better job this model does at avoiding false alarms.
+Specificity is the ratio of true negatives divided by the total number of actual negatives. In other words, for all the negative cases how many did the model predict correctly. The closer this value is to 1.0, the better job this model does at avoiding false alarms. The formula is given below.
 
 <p align="center"> <img width="280" src= "/Pics/W17.png"> </p>
+
+**Type I error:** Type I errors refer to false positives. For instance, the model predicted that an event would occur but it did not.
+**Type II error:** Type II errors refer to false negatives. For instance, the model predicted that an event would not occur but it did.
+
+**Note:** Type I errors are seen as yellow flags and Type II errors are seen red flags. This is due to type II errors being interpreted as worse. For example, we have built a model that predicts whether an earthquake will occur. If the model predicts that an earthquake will occur but it does not (type I error), this will only result in a potential waste of time and resources. For instance, evacuations and shutting down of businesses. However, if the model predicts that it is safe and an earthquake will not happen, but it does (Type II error), this may result in needless loss of life. In this example, it is better to waste resources than there be a huge loss in life to the population.
+
