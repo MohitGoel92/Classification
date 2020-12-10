@@ -77,4 +77,4 @@ LogisticRegressionCV
 
 ## Confusion Matrix
 
-<p align="center"> <img width="300" src= "/Pics/W13.png"> </p>
+<p align="center"> <img width="600" src= "/Pics/W13.png"> </p>
