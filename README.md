@@ -52,7 +52,7 @@ The derivation from the *Logistic Function* to the *Odds Ratio* given below high
 
 **Note:** 
 - P(x) is the probability of a particular observation x belonging to that class.
-- The log odds demonstrates how a unit increase or decrease in our x-values will change our log odds in a linear fashion, according to the coefficient β1 we have learnt.
+- The log odds demonstrates how a unit increase or decrease in our x-values will change our log odds in a linear fashion, according to the coefficient β1 which we have learnt.
 
 The syntax used with logistic regression is as follows:
 
