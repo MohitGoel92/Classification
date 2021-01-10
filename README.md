@@ -164,10 +164,10 @@ The diagram below illustrates how the KNN algorithm works. In the below example,
 
 <p align="center"> <img width="500" src= "/Pics/KNN1.png"> </p>
 
-## Steps to performing the KNN algorithm
+**Steps to performing the KNN algorithm**
 
-- Step 1: Choose the number k of neighbours (usually k = 5).
-- Step 2: Take the k nearest neighbours of the new data point, according to the euclidean distance.
-- Step 3: Among these k neighbours, count the number of data points in each category.
-- Step 4: Assign the new data point to the category where we counted the most neighbours.
+- **Step 1:** Choose the number k of neighbours (usually k = 5).
+- **Step 2:** Take the k nearest neighbours of the new data point, according to the euclidean distance.
+- **Step 3:** Among these k neighbours, count the number of data points in each category.
+- **Step 4:** Assign the new data point to the category where we counted the most neighbours.
 
