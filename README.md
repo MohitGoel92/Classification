@@ -95,7 +95,7 @@ Recall or sensitivity identifies the ratio of true positives divided by the tota
 
 <p align="center"> <img width="400" src= "/Pics/W15.png"> </p>
 
-**Note:** Although this portrays the overall model accuracy, this can be thrown off or misleading by heavily skewed data.
+**Note:** Although this portrays the overall model accuracy, this can be thrown off or misleading by heavily skewed (imbalanced) data.
 
 Precision is the ratio of true positives divided by the total of predicted positives. In other words, for all the positive predictions how many did the model get correct. The closer this value is to 1.0, the better job the model does at identifying only positive instances. The formula is given below:
 
