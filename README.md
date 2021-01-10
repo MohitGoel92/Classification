@@ -58,21 +58,26 @@ The syntax used with logistic regression is as follows:
 
 ```
 # Importing the class containing the classification method
+
 from sklearn.linear_model import LogisticRegression
 
 # Create an instance of the class
 # The l2 penalty refers to Ridge regularisation, and c is the regularisation parameter (also known as inverse lambda). 
 # Therefore, the higher the value for c, the lower the penalty.
+
 lr = LogisticRegression(penalty = 'l2', c = 10)
 
 # Fitting the instance on the data and then predicting
+
 lr.fit(X_train, y_train)
 y_pred = lr.predict(X_test)
 
 # Viewing the output fitted coefficients
+
 lr.coef_
 
 # Tuning the regularisation parameters with cross-validation
+
 LogisticRegressionCV
 ```
 
@@ -140,12 +145,15 @@ The syntax used for error metrics is as follows:
 
 ```
 # Importing the desired error function
+
 from sklearn.metrics import accuracy_score
 
 # Calculating the error on the test and predicted data sets
+
 accuracy_value = accuracy_score(y_test, y_pred)
 
 # List of error metrics and diagnostic tools:
+
 from skelarn.metrics import precision_score, recall_score, f1_score, roc_auc_score, 
                             confusion_matrix, roc_curve, precision_recall_curve
 ```
