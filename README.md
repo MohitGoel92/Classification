@@ -31,9 +31,10 @@ The most common models used for classification are:
 - Support Vector Machines
 - Decision Tree
 - Neural Networks
-- Random Forests
-- Boosting
 - Ensemble Models
+  - Random Forest
+  - Bagging (Bootstrap Aggregating)
+  - Boosting
 
 ## Logistic Regression
 
