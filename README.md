@@ -160,3 +160,14 @@ from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_sco
 
 # K-Nearest Neighbours (KNN)
 
+The diagram below illustrates how the KNN algorithm works. In the below example, we have two classes (A and B) and a new point depicted by the red star. If we choose the number of k-neighbours to be 3, we observe 2 points from class B and only one from class A. Therefore, the algorithm will classify the new point as class B. If we choose the number of k-neighbours to be 6 however, we observe 4 points belonging to class A and only 2 points belonging to class B, therefore classifying the new point as class A.
+
+<p align="center"> <img width="500" src= "/Pics/KNN1.png"> </p>
+
+## Steps to performing the KNN algorithm
+
+- Step 1: Choose the number k of neighbours (usually k = 5).
+- Step 2: Take the k nearest neighbours of the new data point, according to the euclidean distance.
+- Step 3: Among these k neighbours, count the number of data points in each category.
+- Step 4: Assign the new data point to the category where we counted the most neighbours.
+
