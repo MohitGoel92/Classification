@@ -154,6 +154,6 @@ accuracy_value = accuracy_score(y_test, y_pred)
 
 # List of error metrics and diagnostic tools:
 
-from skelarn.metrics import precision_score, recall_score, f1_score, roc_auc_score, 
+from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_score, 
                             confusion_matrix, roc_curve, precision_recall_curve
 ```
