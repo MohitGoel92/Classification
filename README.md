@@ -164,7 +164,7 @@ The diagram below illustrates how the KNN algorithm works. In the below example,
 
 <p align="center"> <img width="500" src= "/Pics/KNN1.png"> </p>
 
-**Requirements for the KNN Model**
+**Requirements for the K-Nearest Neignbours Model**
 
 - The correct value for 'K' (number of neighbours).
 - How to measure the distance or closeness of the neighbours.
@@ -184,6 +184,12 @@ For the other extreme where K=All (K = No. of total points), we observe no decis
 - A common approach is to use the *Elbow Method*. This emphasises the kinks in the curve of the error rate as a function of K. Beyond this point, the rate of improvement slows or stops. The diagram below illustrates this.
 
 <p align="center"> <img width="500" src= "/Pics/KNN3.png"> </p>
+
+**Measuring the distances for K-Nearest Neighbours**
+
+
+
+
 
 **Steps to performing the KNN algorithm**
 
