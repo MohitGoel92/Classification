@@ -164,7 +164,7 @@ The diagram below illustrates how the KNN algorithm works. In the below example,
 
 <p align="center"> <img width="500" src= "/Pics/KNN1.png"> </p>
 
-**Requirements for the K-Nearest Neighbours Model**
+### Requirements for the K-Nearest Neighbours Model
 
 - The correct value for 'K' (number of neighbours).
 - How to measure the distance or closeness of the neighbours.
@@ -177,7 +177,7 @@ For K=1, we observe a decision boundary that seperates the dataset into two regi
 
 For the other extreme where K=All (K = No. of total points), we observe no decision boundary. This is due to the whole region being classified as the majority class, and as there are more blue points than pink the model will classify any new data to the class represented by the colour blue. This indicates that we have traded *Low Variance* for *High Bias*.
 
-**Choosing the right value for K**
+### Choosing the right value for K
 
 - 'K' is a hyperparameter, which means it is not a learnt parameter. We must therefore obtain the correct/optimal number of K-Neigbours from parameter tuning.
 - The right value depends on which error metric is most important to us in regards to the business objective. For instance, if we need to capture all the true positives we focus more on recall. If we must ensure all the predicted positives are correct, we may focus more on precision; finding the balance using the F1 score.
@@ -185,7 +185,7 @@ For the other extreme where K=All (K = No. of total points), we observe no decis
 
 <p align="center"> <img width="500" src= "/Pics/KNN3.png"> </p>
 
-**Measuring the distances for K-Nearest Neighbours**
+### Measuring the distances for K-Nearest Neighbours
 
 When measuring the distances for the KNN model, we have two options. We have the *Euclidean Distance (L2)* and the *Manhattan Distance (L1)*.
 
@@ -199,7 +199,7 @@ The diagram below depicts the Manhattan Distance (L1).
 
 **Note:** Feature Scaling is now crucial.
 
-**Regression with K-Nearest Neighbours**
+### Regression with K-Nearest Neighbours
 
 KNN can also be used for regression. Let's examine the below diagram.
 
