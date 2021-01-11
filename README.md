@@ -205,9 +205,24 @@ KNN can also be used for regression. Instead of predicting the class a point bel
 
 <p align="center"> <img width="1000" height="225" src= "/Pics/KNN6.png"> </p>
 
-- In the first case when K=20, we observe a straight line. This is because a single value will be predicted, which is the mean of all the values. This is another case where we have low variance but high bias, indicating underfitting.
-- For the second case where K=3, we visually see the KNN behaving like a smoothing function. It can be thought of as a rolling average, where the predicted point will be the average of the closest 3 neighbours. This behaviour can be expected for K when K is greater than 1 and less than the total number of samples. 
+- In the first case where K=20, we observe a straight line. This is because a single value will be predicted, which is the mean of all the values. This is another case where we have low variance but high bias, indicating underfitting.
+- For the second case where K=3, we visually see the KNN behaving like a smoothing function. It can be thought of as a rolling average, where the predicted point will be the average of the closest 3 neighbours. This behaviour can be expected for K where K is greater than 1 and less than the total number of samples. 
 - For our third case where K=1, the nearest neighbour will act like the predicton for that value. This is another case where we have low bias but high variance, indicating overfitting.
+
+### Pros of K-Nearest Neighbours
+
+- Simple to implement as it does not require the estimation of any parameters, just which neighbours are closest.
+- Adapts well as new training data is introduced for trying to predict one class against the other, and as the data changes so will the nearest neighbours.
+- Easy to interpret which makes intuitive sense to decision makers, resulting in that model becoming much more powerful especially in a business setting.
+
+### Cons of K-Nearest Neighbours
+
+- Slow to predict because of the many distance calculations. Therefore, the larger the dataset the more computationally intensive the calculations will be as the number of distance calculations will rise.
+- Does not generate insights into the data generation process as it does not give us a model like, for instance, Logistic Regression. For a model like Logistic Regression, it can give us insights such as the contribution of features impacting likelihood of each point falling into a certain category.
+- Can require a lot of memory if the dataset is large (or it grows), as the model needs to store all the values in the training set every time it fits the model.
+- When there are pany predictors, the KNN accuracy can break down due to the curse of dimensionality. If there are a lot of features, the distances are generally further and further away as we increase the dimensions. Remember, the number of dimensions will increase as we increase the number of features.
+
+
 
 
 
