@@ -181,7 +181,7 @@ For the other extreme where K=All (K = No. of total points), we observe no decis
 
 - 'K' is a hyperparameter, which means it is not a learnt parameter. We must therefore obtain the correct/optimal number of K-Neigbours from parameter tuning.
 - The right value depends on which error metric is most important to us in regards to the business objective. For instance, if we need to capture all the true positives we focus more on recall. If we must ensure all the predicted positives are correct, we may focus more on precision; finding the balance using the F1 score.
-- A common approach is to use the *Elbow Method*. This emphasises the kinks in the curve of the error rate as a function of K. Beyond this point, the rate of improvement slows or stops. The diagram below illustrates this.
+- A common approach is to use the *Elbow Method*. This emphasises the kinks in the curve of the error rate as a function of K. Beyond this point, the rate of improvement slows or stops. The main aim therefore being to identify a model with low 'K' and low error rate. The diagram below illustrates this.
 
 <p align="center"> <img width="500" src= "/Pics/KNN3.png"> </p>
 
@@ -221,4 +221,40 @@ KNN can also be used for regression. Instead of predicting the class a point bel
 - Does not generate insights into the data generation process as it does not give us a model like, for instance, Logistic Regression. For a model like Logistic Regression, it can give us insights such as the contribution of features impacting the likelihood of each point falling into a certain predicted category.
 - Can require a lot of memory if the dataset is large (or it grows), as the model needs to store all the values in the training set every time it fits the model.
 - When there are many predictors, the KNN accuracy can break down due to the curse of dimensionality. If there are a lot of features, the distances are generally further and further away as we increase the dimensions. Remember, the number of dimensions will increase as we increase the number of features.
+
+### Characteristics of a K-Nearest Neighbour Model Vs Linear/Logistic Regression
+
+**Fitting**
+
+- For Linear Regression, the fitting involves minimising the cost function which is slow.
+- For KNN, the fitting involves storing the training data which is fast.
+
+**Memory**
+
+- For Linear Regression, the model has only a few parameters as once it is fit, it only has to remember the coefficients that determined the line or hyperplane in the higher dimensional space, resulting in being memory efficient.
+- For KNN, the model has many parameters as it needs to remember the entire training dataset, resulting in being memory intensive.
+
+**Prediction**
+
+- For Linear Regression, predictions are just a simply combination of out vectors, resulting in fast computations.
+- For KNN, we must compute several different distances from each of the points, resulting in slow computations.
+
+The syntax used with K-Nearest Neighbours is as follows:
+
+```
+# Importing the class containing the classification method
+
+from sklearn.neighbors import KNeighborsClassifier
+
+# Creating an instance of the class
+
+KNN = KNeighborsClassifier(n_neighbors = 5)
+
+# Fitting the instance on the training dataset and predicting the test set value
+
+KNN.fit(X_train, y_train)
+y_pred = KNN.predict(X_test)
+
+Regression can be done with KNeighborsRegressor
+```
 
