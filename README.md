@@ -203,7 +203,7 @@ The diagram below depicts the Manhattan Distance (L1).
 
 KNN can also be used for regression. Let's examine the below diagram.
 
-<p align="center"> <img width="1000" height="275" src= "/Pics/KNN6.png"> </p>
+<p align="center"> <img width="1000" height="250" src= "/Pics/KNN6.png"> </p>
 
 **Steps to performing the KNN algorithm**
 
