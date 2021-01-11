@@ -173,7 +173,7 @@ The diagram below shows the two extreme cases for choosing the number of neighbo
 
 <p align="center"> <img width="1000" src= "/Pics/KNN2.png"> </p>
 
-For K=1, we see a boundary that seperates the two regions (blue and red). This can be thought of as the predictive regions for predicting the regions of new data. However, we also observe that the model has overfit. This means we have traded *Low Bias* for *High Variance*. For the other extreme where K=All (K = No. of total points), we observe no seperating boundary. This is due to the whole region being classified the majority class. This means we have traded *Low Variance* for *High Bias*.
+For K=1, we see a boundary that seperates the two regions (blue and magenta). This can be thought of as the predictive regions for predicting the regions of new data. However, we also observe that the model has overfit. This means we have traded *Low Bias* for *High Variance*. For the other extreme where K=All (K = No. of total points), we observe no seperating boundary. This is due to the whole region being classified the majority class. This means we have traded *Low Variance* for *High Bias*.
 
 'K' is a hyperparameter, which means we must obtain the correct number of K-Neigbours from testing.
 
