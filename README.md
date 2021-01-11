@@ -164,7 +164,7 @@ The diagram below illustrates how the KNN algorithm works. In the below example,
 
 <p align="center"> <img width="500" src= "/Pics/KNN1.png"> </p>
 
-**Requirements for the K-Nearest Neignbours Model**
+**Requirements for the K-Nearest Neighbours Model**
 
 - The correct value for 'K' (number of neighbours).
 - How to measure the distance or closeness of the neighbours.
@@ -187,9 +187,15 @@ For the other extreme where K=All (K = No. of total points), we observe no decis
 
 **Measuring the distances for K-Nearest Neighbours**
 
+When measuring the distances for the KNN model, we have two options. We have the *Euclidean Distance (L2)* and the *Manhattan Distance (L1)*.
 
+The diagram below depicts the Euclidean Distance (L2).
 
+<p align="center"> <img width="500" src= "/Pics/KNN4.png"> </p>
 
+The diagram below depicts the Manhattan Distance (L2).
+
+<p align="center"> <img width="500" src= "/Pics/KNN5.png"> </p>
 
 **Steps to performing the KNN algorithm**
 
