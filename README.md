@@ -212,24 +212,13 @@ KNN can also be used for regression. Instead of predicting the class a point bel
 ### Pros of K-Nearest Neighbours
 
 - Simple to implement as it does not require the estimation of any parameters, just which neighbours are closest.
-- Adapts well as new training data is introduced for trying to predict one class against the other, and as the data changes so will the nearest neighbours.
-- Easy to interpret which makes intuitive sense to decision makers, resulting in that model becoming much more powerful especially in a business setting.
+- Adapts well as new training data is introduced for trying to predict one class against the other. As the data changes so will the nearest neighbours.
+- Easy to interpret which makes intuitive sense to decision makers, resulting in that model becoming much more powerful in a business setting.
 
 ### Cons of K-Nearest Neighbours
 
 - Slow to predict because of the many distance calculations. Therefore, the larger the dataset the more computationally intensive the calculations will be as the number of distance calculations will rise.
-- Does not generate insights into the data generation process as it does not give us a model like, for instance, Logistic Regression. For a model like Logistic Regression, it can give us insights such as the contribution of features impacting likelihood of each point falling into a certain category.
+- Does not generate insights into the data generation process as it does not give us a model like, for instance, Logistic Regression. For a model like Logistic Regression, it can give us insights such as the contribution of features impacting the likelihood of each point falling into a certain predicted category.
 - Can require a lot of memory if the dataset is large (or it grows), as the model needs to store all the values in the training set every time it fits the model.
-- When there are pany predictors, the KNN accuracy can break down due to the curse of dimensionality. If there are a lot of features, the distances are generally further and further away as we increase the dimensions. Remember, the number of dimensions will increase as we increase the number of features.
-
-
-
-
-
-**Steps to performing the KNN algorithm**
-
-- **Step 1:** Choose the number k of neighbours (usually k = 5).
-- **Step 2:** Take the k nearest neighbours of the new data point, according to the euclidean distance.
-- **Step 3:** Among these k neighbours, count the number of data points in each category.
-- **Step 4:** Assign the new data point to the category where we counted the most neighbours.
+- When there are many predictors, the KNN accuracy can break down due to the curse of dimensionality. If there are a lot of features, the distances are generally further and further away as we increase the dimensions. Remember, the number of dimensions will increase as we increase the number of features.
 
