@@ -205,9 +205,9 @@ KNN can also be used for regression. Instead of predicting the class a point bel
 
 <p align="center"> <img width="1000" height="250" src= "/Pics/KNN6.png"> </p>
 
-- In the first case when K=20, we observe a straight line. This is because a single value will be predicted, which is the mean of all the values. This is another case where we have low variance but high bias.
-- For the second case where K=3, we visually see the KNN behaving like a smoothing function. It can be thought of as a rolling average. The behaviour can be expected for K when K is greater than 1 and less than the number of samples. 
-- For our third case where K=1, the nearest neighbour will act like the predicton for that value. This is another case where we have low bias but high variance.
+- In the first case when K=20, we observe a straight line. This is because a single value will be predicted, which is the mean of all the values. This is another case where we have low variance but high bias, indicating underfitting.
+- For the second case where K=3, we visually see the KNN behaving like a smoothing function. It can be thought of as a rolling average, where the predicted point will be the average of the closest 3 neighbours. This behaviour can be expected for K when K is greater than 1 and less than the total number of samples. 
+- For our third case where K=1, the nearest neighbour will act like the predicton for that value. This is another case where we have low bias but high variance, indicating overfitting.
 
 
 
