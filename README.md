@@ -166,7 +166,10 @@ The diagram below illustrates how the KNN algorithm works. In the below example,
 
 **Requirements for the KNN Model**
 
+- The correct value for 'k' (number of neighbours).
+- How to measure the distance or closeness of the neighbours.
 
+<p align="center"> <img width="500" src= "/Pics/KNN2.png"> </p>
 
 **Steps to performing the KNN algorithm**
 
