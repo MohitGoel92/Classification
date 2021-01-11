@@ -160,16 +160,23 @@ from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_sco
 
 # K-Nearest Neighbours (KNN)
 
-The diagram below illustrates how the KNN algorithm works. In the below example, we have two classes (A and B) and a new point depicted by the red star. If we choose the number of k-neighbours to be 3, we observe 2 points from class B and only one from class A. Therefore, the algorithm will classify the new point as class B. If we choose the number of k-neighbours to be 6 however, we observe 4 points belonging to class A and only 2 points belonging to class B, therefore classifying the new point as class A.
+The diagram below illustrates how the KNN algorithm works. In the below example, we have two classes (A and B) and a new point depicted by the red star. If we choose the number of K-Neighbours to be 3, we observe 2 points from class B and only one from class A. Therefore, the algorithm will classify the new point as class B. If we choose the number of K-Neighbours to be 6 however, we observe 4 points belonging to class A and only 2 points belonging to class B, therefore classifying the new point as class A.
 
 <p align="center"> <img width="500" src= "/Pics/KNN1.png"> </p>
 
 **Requirements for the KNN Model**
 
-- The correct value for 'k' (number of neighbours).
+- The correct value for 'K' (number of neighbours).
 - How to measure the distance or closeness of the neighbours.
 
+The diagram below shows the two extreme cases for choosing the number of neighbours 'K'.
+
 <p align="center"> <img width="1000" src= "/Pics/KNN2.png"> </p>
+
+For K=1, we see a boundary that seperates the two regions (blue and red). This can be thought of as the predictive regions for predicting the regions of new data. However, we also observe that the model has overfit. This means we have traded *Low Bias* for *High Variance*. For the other extreme where K=All (K = No. of total points), we observe no seperating boundary. This is due to the whole region being classified the majority class. This means we have traded *Low Variance* for *High Bias*.
+
+'K' is a hyperparameter, which means we must obtain the correct number of K-Neigbours from testing.
+
 
 **Steps to performing the KNN algorithm**
 
