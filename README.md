@@ -164,6 +164,10 @@ The diagram below illustrates how the KNN algorithm works. In the below example,
 
 <p align="center"> <img width="500" src= "/Pics/KNN1.png"> </p>
 
+**Requirements for the KNN Model**
+
+
+
 **Steps to performing the KNN algorithm**
 
 - **Step 1:** Choose the number k of neighbours (usually k = 5).
