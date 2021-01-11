@@ -193,9 +193,17 @@ The diagram below depicts the Euclidean Distance (L2).
 
 <p align="center"> <img width="500" src= "/Pics/KNN4.png"> </p>
 
-The diagram below depicts the Manhattan Distance (L2).
+The diagram below depicts the Manhattan Distance (L1).
 
 <p align="center"> <img width="500" src= "/Pics/KNN5.png"> </p>
+
+**Note:** Feature Scaling is now crucial.
+
+**Regression with K-Nearest Neighbours**
+
+KNN can also be used for regression. Let's examine the below diagram.
+
+<p align="center"> <img width="500" src= "/Pics/KNN6.png"> </p>
 
 **Steps to performing the KNN algorithm**
 
