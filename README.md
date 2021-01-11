@@ -203,7 +203,7 @@ The diagram below depicts the Manhattan Distance (L1).
 
 KNN can also be used for regression. Instead of predicting the class a point belongs to as we learnt in classification, for regression each value predicted is the mean value of its neighbours. So in essence, the KNN works as a smoothing function. Let's examine the diagram below.
 
-<p align="center"> <img width="1000" height="250" src= "/Pics/KNN6.png"> </p>
+<p align="center"> <img width="1000" height="225" src= "/Pics/KNN6.png"> </p>
 
 - In the first case when K=20, we observe a straight line. This is because a single value will be predicted, which is the mean of all the values. This is another case where we have low variance but high bias, indicating underfitting.
 - For the second case where K=3, we visually see the KNN behaving like a smoothing function. It can be thought of as a rolling average, where the predicted point will be the average of the closest 3 neighbours. This behaviour can be expected for K when K is greater than 1 and less than the total number of samples. 
