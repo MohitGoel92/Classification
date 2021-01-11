@@ -173,12 +173,17 @@ The diagrams below show the two extreme cases when choosing the number of neighb
 
 <p align="center"> <img width="1000" src= "/Pics/KNN2.png"> </p>
 
-For K=1, we observe a boundary that seperates the dataset into two regions (blue and magenta). These can be thought of as the predictive regions when classifying new data. However, we also notice that the model has overfit; indicating we have traded *Low Bias* for *High Variance*. 
+For K=1, we observe a decision boundary that seperates the dataset into two regions (blue and magenta). These can be thought of as the predictive regions when classifying new data. However, we also notice that the model has overfit; indicating we have traded *Low Bias* for *High Variance*. 
 
-For the other extreme where K=All (K = No. of total points), we observe no seperating boundary. This is due to the whole region being classified as the majority class, and as there are more blue points the model will classify any new data to the class represented by the colour blue. This indicates that we have traded *Low Variance* for *High Bias*.
+For the other extreme where K=All (K = No. of total points), we observe no decision boundary. This is due to the whole region being classified as the majority class, and as there are more blue points than pink the model will classify any new data to the class represented by the colour blue. This indicates that we have traded *Low Variance* for *High Bias*.
 
-'K' is a hyperparameter, which means we must obtain the correct number of K-Neigbours from testing.
+**Choosing the right value for K**
 
+- 'K' is a hyperparameter, which means it is not a learnt parameter. We must therefore obtain the correct/optimal number of K-Neigbours from parameter tuning.
+- The right value depends on which error metric is most important to us in regards to the business objective. For instance, if we need to capture all the true positives we focus more on recall. If we must ensure all the predicted positives are correct, we may focus more on precision; finding the balance using the F1 score.
+- A common approach is to use the *Elbow Method*. This emphasises the kinks in the curve of the error rate as a function of K. Beyond this point, the rate of improvement slows or stops. The diagram below illustrates this.
+
+<p align="center"> <img width="500" src= "/Pics/KNN3.png"> </p>
 
 **Steps to performing the KNN algorithm**
 
