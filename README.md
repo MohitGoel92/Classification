@@ -169,11 +169,13 @@ The diagram below illustrates how the KNN algorithm works. In the below example,
 - The correct value for 'K' (number of neighbours).
 - How to measure the distance or closeness of the neighbours.
 
-The diagram below shows the two extreme cases for choosing the number of neighbours 'K'.
+The diagrams below show the two extreme cases when choosing the number of neighbours 'K'.
 
 <p align="center"> <img width="1000" src= "/Pics/KNN2.png"> </p>
 
-For K=1, we see a boundary that seperates the two regions (blue and magenta). This can be thought of as the predictive regions for predicting the regions of new data. However, we also observe that the model has overfit. This means we have traded *Low Bias* for *High Variance*. For the other extreme where K=All (K = No. of total points), we observe no seperating boundary. This is due to the whole region being classified the majority class. This means we have traded *Low Variance* for *High Bias*.
+For K=1, we observe a boundary that seperates the dataset into two regions (blue and magenta). These can be thought of as the predictive regions when classifying new data. However, we also notice that the model has overfit; indicating we have traded *Low Bias* for *High Variance*. 
+
+For the other extreme where K=All (K = No. of total points), we observe no seperating boundary. This is due to the whole region being classified as the majority class, and as there are more blue points the model will classify any new data to the class represented by the colour blue. This indicates that we have traded *Low Variance* for *High Bias*.
 
 'K' is a hyperparameter, which means we must obtain the correct number of K-Neigbours from testing.
 
