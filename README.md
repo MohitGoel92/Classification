@@ -260,3 +260,34 @@ Regression can be done with KNeighborsRegressor
 
 # Support Vector Machines
 
+Please see the GitHub page given by the below link for an in depth explanation of classification models, especially for SVM Linear and SVM Gaussian Radial Basis Function (RBF):
+
+https://github.com/MohitGoel92/Predicting-Customer-Purchases
+
+### Regularisation in SVMs
+
+The equation below is the overall cost function:
+
+<p align="center"> <img width="500" src= "/Pics/SVM1.gif"> </p>
+
+The syntax used with SVM is as follows:
+
+```
+# Importing the class containing the classification method
+
+from sklearn.svm import LinearSVC
+
+# Creating an instance of the class
+
+LinSVC = LinearSVC(penalty = 'l2', C = 10)
+
+# Fitting the instance on the data and then predicting the expected value
+
+LinSVC = LinSVC.fit((X_train, y_train))
+y_pred = LinSVC.predict(X_test)
+
+# Tune regularisation parameters with cross-validation.
+
+# Use LinearSVM for regression
+```
+
