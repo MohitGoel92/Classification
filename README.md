@@ -236,7 +236,7 @@ KNN can also be used for regression. Instead of predicting the class a point bel
 
 **Prediction**
 
-- For Linear Regression, predictions are just a simply combination of out vectors, resulting in fast computations.
+- For Linear Regression, predictions are just a simple combination of out vectors, resulting in fast computations.
 - For KNN, we must compute several different distances from each of the points, resulting in slow computations.
 
 The syntax used with K-Nearest Neighbours is as follows:
