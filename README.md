@@ -276,7 +276,7 @@ The equation below is the overall SVM *Cost* function:
 
 **Note:** For the Regulariastion term, its impact can be tweeked by the use of the value of 'C', where the smaller the value of 'C' will mean more regularisation (like inverse lambda).
 
-The syntax used with SVM is as follows:
+The syntax used with SVM (Linear) is as follows:
 
 ```
 # Importing the class containing the classification method
@@ -305,5 +305,23 @@ Please see the GitHub page given by the below link for an in depth explanation o
 
 https://github.com/MohitGoel92/Predicting-Customer-Purchases
 
+The syntax used with SVM (Kernel) is as follows:
+
+```
+# Imorting the class containing the classification method
+
+from sklearn.svm import SVC
+
+# Creating an instance of the class
+
+rbfSVC = SVC(kernel = 'rbf', gamma=1.0, C=10.0)
+
+# Fitting the instance on the training dataset and predicting the test set values
+
+rbfSVC.fit(X_train, y_train)
+y_pred = rbfSVC.predict(X_test)
+
+# We tune the kernel and associated parameters with cross-validation
+```
 
 
