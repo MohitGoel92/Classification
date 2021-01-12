@@ -266,9 +266,15 @@ https://github.com/MohitGoel92/Predicting-Customer-Purchases
 
 ### Regularisation in SVMs
 
-The equation below is the overall cost function:
+The equation below is the overall SVM *Cost* function:
 
 <p align="center"> <img width="500" src= "/Pics/SVM1.gif"> </p>
+
+- The first term will be referred to as the *Hinge Loss* function, which is the cost for misclassifications. The greater the number of misclassifications, the higher the Hinge Loss value.
+- The second term is the *Regularisation* term, which adds an additional cost for having a more complex decision boundary with higher coefficients, thus preventing overfitting. Therefore, a complex boundary will result in a lower Hinge Loss function, but the impact will be heavily outweighed by the large Regularisation term.
+- If we have a more generalised decision boundary, although our Hinge Loss function will be slightly higher due to potential misclassifications, our regularisation term will be much smaller, resulting in a lower overall Cost function.
+
+**Note:** For the Regulariastion term, its impact can be tweeked by the use of the value of 'C', where the smaller the value of 'C' will mean more regularisation (like inverse lambda).
 
 The syntax used with SVM is as follows:
 
@@ -290,4 +296,14 @@ y_pred = LinSVC.predict(X_test)
 
 # Use LinearSVM for regression
 ```
+
+**Note:** SVM does not calculate the predicted probabilities in the range between 0 and 1. It outputs labels determined by the decision boundary assigned to the region where an observation belongs.
+
+### Support Vector Machines Kernels
+
+Please see the GitHub page given by the below link for an in depth explanation of classification models, especially for SVM Linear and SVM Gaussian Radial Basis Function (RBF):
+
+https://github.com/MohitGoel92/Predicting-Customer-Purchases
+
+
 
