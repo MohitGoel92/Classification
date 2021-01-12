@@ -258,3 +258,5 @@ y_pred = KNN.predict(X_test)
 Regression can be done with KNeighborsRegressor
 ```
 
+# Support Vector Machines
+
