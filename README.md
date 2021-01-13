@@ -376,8 +376,4 @@ X_test = rbfSampler.transform(X_test)
 ```
 The below is a short summary of the conditions we should look out for when making model choices.
 
-Features	Data	Model Choice
-Many (~10K Features)	Small (1K rows)	Simple, Logistic or LinearSVC
-Few (<100 Features)	Medium (~10K rows)	SVC with RBF Kernel
-Few (<100 Features)	Many (>100K Rows)	- Add features using polynomials and then performing logistic regression. - LinearSVC, or Kernel Approx.
-
+<p align="center"> <img width="500" src= "/Pics/mlw.png"> </p>
