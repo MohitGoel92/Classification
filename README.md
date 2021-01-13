@@ -264,6 +264,8 @@ Please see the GitHub page given by the below link for an in depth explanation o
 
 https://github.com/MohitGoel92/Predicting-Customer-Purchases
 
+In essence, the main idea behind Support Vector Machines is to find a hyperplane that seperates classes by determining decision boundaries that maximise the distance between classes.
+
 ### Regularisation in SVMs
 
 The equation below is the overall SVM *Cost* function:
@@ -275,6 +277,8 @@ The equation below is the overall SVM *Cost* function:
 - If we have a more generalised decision boundary, although our Hinge Loss function will be slightly higher due to potential misclassifications, our regularisation term will be much smaller, resulting in a lower overall Cost function.
 
 **Note:** For the Regulariastion term, its impact can be tweeked by the use of the value of 'C', where the smaller the value of 'C' will mean more regularisation (like inverse lambda).
+
+**Note:** When comparing Logistic Regression and SVMs, one of the main differences is that the cost function for Logistic Regression decreases to zero, but rarely reaches zero. On the other hand, SVMs use the Hinge Loss function as the cost function to penalise misclassification. This tends to lead to better accuracy at the cost of having less sensitivity on the predicted probabilities. 
 
 The syntax used with SVM (Linear) is as follows:
 
@@ -304,6 +308,8 @@ y_pred = LinSVC.predict(X_test)
 Please see the GitHub page given by the below link for an in depth explanation of classification models, especially for SVM Linear and SVM Gaussian Radial Basis Function (RBF):
 
 https://github.com/MohitGoel92/Predicting-Customer-Purchases
+
+**Note:** By using Gaussian Kernels, we can transform our data space vectors into a different coordinate system, and therefore having a better chance for finding a hyperplane that classifies our data well. SVMs with RBF kernels are slow to train with data sets that are large or have many features.
 
 The syntax used with SVM (Kernel) is as follows:
 
@@ -351,7 +357,6 @@ X_test = NystroemSVC.transform(X_test)
 
 # Tune the kernel and associated parameters with cross-validation
 ```
-
 
 The syntax used for faster kernel transformations (RBFsampler) is as follows:
 
