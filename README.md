@@ -356,6 +356,28 @@ X_test = NystroemSVC.transform(X_test)
 The syntax used for faster kernel transformations (RBFsampler) is as follows:
 
 ```
+# Importing the class containing the classification method
 
+from sklearn.kernel_approximation import RBFsampler
 
+# Creating an instance of the class
+# Note: RBF is the only kernel that can be used.
+# Note: kernel and gamma are identical to SVC.
+# Note: n_components are the number of samples used to come up with our kernel approximation.
+
+rbfSampler = RBFsampler(gamma = 1.0, n_components = 100)
+
+# Fitting and transforming the instance on the dataset
+
+X_train = rbfSampler.fit_transform(X_train)
+X_test = rbfSampler.transform(X_test)
+
+# Tune the kernel parameters and compnents with cross-validation
 ```
+The below is a short summary of the conditions we should look out for when making model choices.
+
+Features	Data	Model Choice
+Many (~10K Features)	Small (1K rows)	Simple, Logistic or LinearSVC
+Few (<100 Features)	Medium (~10K rows)	SVC with RBF Kernel
+Few (<100 Features)	Many (>100K Rows)	- Add features using polynomials and then performing logistic regression. - LinearSVC, or Kernel Approx.
+
