@@ -324,3 +324,38 @@ y_pred = rbfSVC.predict(X_test)
 # We tune the kernel and associated parameters with cross-validation
 ```
 
+### Machine Learning Workflow
+
+**Problem:** SVMs and RBF Kernels are very slow to train with lots of features or data.
+
+**Data Collection:** The construction of approximate kernal gaps with Stochastic Gradient Descent (SGD) using Nystroem or RBF Sampler. We then fit a much simpler, linear classifier.
+
+The syntax used for faster kernel transformations (Nyostroem) is as follows:
+
+```
+# Importing the class containing the classification method
+
+from sklearn.kernel_approximation import Nystroem
+
+# Creating an instance of the class
+# Note: Multiple non-linear kernels can be used.
+# Note: kernel and gamma are identical to SVC.
+# Note: n_components are the number of samples used to come up with our kernel approximation.
+
+NystroemSVC = Nystroem(kernel = 'rbf', gamma = 1.0, n_components = 100)
+
+# Fitting and transforming the instance on the dataset
+
+X_train = NystroemSVC.fit_transform(X_train)
+X_test = NystroemSVC.transform(X_test)
+
+# Tune the kernel and associated parameters with cross-validation
+```
+
+
+The syntax used for faster kernel transformations (RBFsampler) is as follows:
+
+```
+
+
+```
