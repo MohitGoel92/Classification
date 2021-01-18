@@ -401,8 +401,6 @@ We wish to predict whether customers will play tennis based on the predictive fe
 
 <p align="center"> <img width="450" src= "/Pics/dt2.png"> </p>
 
-We keep splitting until the leaf node(s) are pure (only once class remains). We may also stop if a maximum depth is reached, or a performance metrics is achieved. 
-
 **Note:** Trees that predict categorical results are decision trees. To predict quantities we use regression trees, where the values at the leaves of regression trees are the averages of all the members.
 
 For example, let's say we wish to use the slope and elevation in the Himalayas to predict the average precipitation, which is a continuous variable. The tree given below illustrates this example.
@@ -415,4 +413,7 @@ Graphically, a tree that predicts continuous values will look like the below.
 
 <p align="center"> <img width="550" src= "/Pics/dt4.png"> </p>
 
-In the diagram above, max_depth of 2 is given by the blue line and max_depth of 5 is given by the pink. For max_depth of 2, we will get four different projected values for our predictions. For max_depth of 5 we observe overfitting, therefore finding the optimal balance of the right depth being crucial. 
+In the diagram above, max_depth of 2 is given by the blue line and max_depth of 5 is given by the pink. For max_depth of 2, we will get four different projected values for our predictions. For max_depth of 5 we observe overfitting, therefore finding the optimal balance of the right depth being crucial.
+
+We keep splitting until the leaf node(s) are pure (only one class remains). We may also stop if a maximum depth is reached, or a performance metrics is achieved. However, methodically we can use *Greedy Search* to find the best split at each step. The best split is the one that maximises the *Information Gained* from the split.
+
