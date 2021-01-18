@@ -382,3 +382,11 @@ X_test = rbfSampler.transform(X_test)
 The below is a short summary of the conditions we should look out for when making model choices.
 
 <p align="center"> <img width="700" src= "/Pics/mlw2.png"> </p>
+
+# Decision Trees
+
+Let's observe the dataset below:
+
+<p align="center"> <img width="700" src= "/Pics/dt1.png"> </p>
+
+<p align="center"> <img width="700" src= "/Pics/dt2.png"> </p>
