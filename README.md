@@ -389,4 +389,10 @@ Let's observe the dataset below:
 
 <p align="center"> <img width="700" src= "/Pics/dt1.png"> </p>
 
+We wish to predict whether customers will play tennis based on the predictive features: temperature, humidity, wind and outlook. We then segment the data based on features to predict the result. The diagram below illustrates this step.
+
 <p align="center"> <img width="450" src= "/Pics/dt2.png"> </p>
+
+We keep splitting until the leaf node(s) are pure (only once class remains). We may also stop if a maximum depth is reached, or a performance metrics is achieved. 
+
+**Note:** Trees that predict categorical results are decision trees. To predict quantities we use regression trees, where the values at the leaves of regression trees are the averages of all the members.
