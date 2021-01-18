@@ -417,3 +417,8 @@ In the diagram above, max_depth of 2 is given by the blue line and max_depth of 
 
 We keep splitting until the leaf node(s) are pure (only one class remains). We may also stop if a maximum depth is reached, or a performance metrics is achieved. However, methodically we can use *Greedy Search* to find the best split at each step. The best split is the one that maximises the *Information Gained* from the split.
 
+### Splitting based on Classification Error
+
+The *Classification Error Equation* is given below:
+
+<p align="center"> <img width="550" src= "/Pics/dt5.png"> </p>
