@@ -385,6 +385,14 @@ The below is a short summary of the conditions we should look out for when makin
 
 # Decision Trees
 
+Please see the GitHub page given by the below link for an in depth explanation of classification models, especially for Classification and Regression Trees (CART):
+
+https://github.com/MohitGoel92/Predicting-Customer-Purchases
+
+Please use the GitHub page given by the below link in a further explanation into Entropy (information gain) Vs Gini Index:
+
+https://github.com/MohitGoel92/E-Signing-Loan-Prediction
+
 Let's observe the dataset below:
 
 <p align="center"> <img width="700" src= "/Pics/dt1.png"> </p>
@@ -396,3 +404,4 @@ We wish to predict whether customers will play tennis based on the predictive fe
 We keep splitting until the leaf node(s) are pure (only once class remains). We may also stop if a maximum depth is reached, or a performance metrics is achieved. 
 
 **Note:** Trees that predict categorical results are decision trees. To predict quantities we use regression trees, where the values at the leaves of regression trees are the averages of all the members.
+
