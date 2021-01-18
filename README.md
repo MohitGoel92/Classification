@@ -422,3 +422,8 @@ We keep splitting until the leaf node(s) are pure (only one class remains). We m
 The *Classification Error Equation* is given below:
 
 <p align="center"> <img width="400" src= "/Pics/dt5.gif"> </p>
+
+Let's examine the below tree diagram.
+
+<p align="center"> <img width="450" src= "/Pics/dt6.png"> </p>
+
