@@ -389,4 +389,4 @@ Let's observe the dataset below:
 
 <p align="center"> <img width="700" src= "/Pics/dt1.png"> </p>
 
-<p align="center"> <img width="700" src= "/Pics/dt2.png"> </p>
+<p align="center"> <img width="550" src= "/Pics/dt2.png"> </p>
