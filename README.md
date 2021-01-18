@@ -405,3 +405,8 @@ We keep splitting until the leaf node(s) are pure (only once class remains). We 
 
 **Note:** Trees that predict categorical results are decision trees. To predict quantities we use regression trees, where the values at the leaves of regression trees are the averages of all the members.
 
+For example, let's say we wish to use the slope and elevation in the Himalayas to predict the average precipitation, which is a continuous variable. The tree given below illustrates this example.
+
+<p align="center"> <img width="450" src= "/Pics/dt3.png"> </p>
+
+The values at the leaves, are the averages of the members.
