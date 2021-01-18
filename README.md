@@ -413,6 +413,6 @@ The values at the leaves are the averages of the members that fall within each t
 
 Graphically, a tree that predicts continuous values will look like the below.
 
-<p align="center"> <img width="450" src= "/Pics/dt4.png"> </p>
+<p align="center"> <img width="550" src= "/Pics/dt4.png"> </p>
 
 In the diagram above, max_depth of 2 is given by the blue line and max_depth of 5 is given by the pink. For max_depth of 2, we will get four different projected values for our predictions. For max_depth of 5 we observe overfitting, therefore finding the optimal balance of the right depth being crucial. 
