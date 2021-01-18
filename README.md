@@ -425,5 +425,5 @@ The *Classification Error Equation* is given below:
 
 Let's examine the below tree diagram.
 
-<p align="center"> <img width="450" src= "/Pics/dt5.png"> </p>
+<p align="center"> <img width="400" src= "/Pics/dt5.png"> </p>
 
