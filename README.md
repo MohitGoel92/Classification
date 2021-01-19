@@ -488,4 +488,5 @@ The diagram below illustrates the comparison between the Classification Error, C
 
 <p align="center"> <img width="450" src= "/Pics/dt112.png"> </p>
 
+**Note:** Getting perfect splits will eventually lead to overfitting. Therefore, if we get down to homogeneous nodes we will overfit. We must therefore ensure the right balance between variance and tradeoff.
 
