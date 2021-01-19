@@ -438,7 +438,7 @@ Let's examine the below tree diagram.
 
 The *Entropy* equation is given below:
 
-<p align="center"> <img width="400" src= "/Pics/dt6.gif"> </p>
+<p align="center"> <img width="400" src= "/Pics/dt6.png"> </p>
 
 Let's examine the below tree diagram.
 
