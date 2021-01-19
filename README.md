@@ -474,7 +474,7 @@ With Entropy gain, the function has a curve. This allows the average information
 
 The diagram below depicts this.
 
-<p align="center"> <img width="400" src= "/Pics/dt11.png"> </p>
+<p align="center"> <img width="400" src= "/Pics/dt9.png"> </p>
 
 ### The Gini Index
 
