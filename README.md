@@ -480,9 +480,9 @@ The diagram below depicts this.
 
 In practice, the *Gini* index is often used for splitting. This function is similar to Entropy as it is also curved. However, unlike Entropy it does not contain a logarithm so it is easier to compute. The diagram below illustrates the comparison between the Classification Error, Cross Entropy and Gini Index.
 
-<p align="center"> <img width="400" src= "/Pics/dt11.png"> </p>
+<p align="center"> <img width="450" src= "/Pics/dt11.png"> </p>
 
 The Gini index function is given below:
 
-<p align="center"> <img width="400" src= "/Pics/dt10.png"> </p>
+<p align="center"> <img width="375" src= "/Pics/dt10.png"> </p>
 
