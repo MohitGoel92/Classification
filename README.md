@@ -469,3 +469,9 @@ With Classification Error, the function is flat. The final average Classificatio
 The diagram below depicts this.
 
 <p align="center"> <img width="400" src= "/Pics/dt8.png"> </p>
+
+With Entropy gain, the function has a curve. This allows the average information of children to be less than the parent. Resulting in information gain and continued splitting.
+
+The diagram below depicts this.
+
+<p align="center"> <img width="400" src= "/Pics/dt9.png"> </p>
