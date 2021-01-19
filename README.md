@@ -447,8 +447,8 @@ Let's examine the below tree diagram.
 - For the first node, the Entropy before is: -8/12 log2 (8/12) - 4/12 log2 (4/12) = 0.9183
 - For the second node, the Entropy is: -2/4 log2 (2/4) - 2/4 log2 (2/4) = 1.00
 - For the third node, the Entropy is: -6/8 log2 (6/8) - 2/8 log2 (2/8) = 0.8113
-- The overall Entropy change is: 0.9183 - 4/12(1) - 8/12(0.8113) = 0.0441
-- As this value is greater than zero, we conclude that we are able to have information gain when we use entropy.
+- The overall Entropy change by weighted average is: 0.9183 - 4/12(1) - 8/12(0.8113) = 0.0441
+- We observe that Entropy has decreased, therefore concluding that we are able to have information gain when we use entropy.
 
 **Note:** Splitting based on Entropy allows further splits to occur. This can eventually reach the goal of homogeneous nodes.
 
