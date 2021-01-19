@@ -458,4 +458,4 @@ Entropy has the same maximum but is curved. The curvature allows splitting to co
 
 The diagram below illustrates this for clarification.
 
-<p align="center"> <img width="350" src= "/Pics/dt7.png"> </p>
+<p align="center"> <img width="400" src= "/Pics/dt7.png"> </p>
