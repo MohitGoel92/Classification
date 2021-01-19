@@ -448,7 +448,14 @@ Let's examine the below tree diagram.
 - For the second node, the Entropy is: -2/4 log2 (2/4) - 2/4 log2 (2/4) = 1.00
 - For the third node, the Entropy is: -6/8 log2 (6/8) - 2/8 log2 (2/8) = 0.8113
 - The overall Entropy change by weighted average is: 0.9183 - 4/12(1) - 8/12(0.8113) = 0.0441
-- We observe that Entropy has decreased, therefore concluding that we are able to have information gain when we use entropy.
+- We observe that Entropy has decreased, therefore concluding we are able to have information gain when we use entropy. We can now allow further splits to occur; this eventually reaching the goal of homogeneous nodes.
 
-**Note:** Splitting based on Entropy allows further splits to occur. This can eventually reach the goal of homogeneous nodes.
+### Classification Error Vs Entropy
 
+The Classifiation Error is a flat function with the maximum at the center. The center represents ambiguity (largest error) which will occur at the 50/50 split. Splitting metrics favour results that are furthest away from the centre.
+
+Entropy has the same maximum but is curved. The curvature allows splitting to continue until the nodes are pure.
+
+The diagram below illustrates this for clarification.
+
+<p align="center"> <img width="350" src= "/Pics/dt7.png"> </p>
