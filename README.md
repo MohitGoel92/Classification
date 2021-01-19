@@ -268,7 +268,7 @@ In essence, the main idea behind Support Vector Machines is to find a hyperplane
 
 ### Regularisation in SVMs
 
-The equation below is the overall SVM *Cost* function:
+The function below is the overall SVM *Cost* function:
 
 <p align="center"> <img width="500" src= "/Pics/SVM1.gif"> </p>
 
@@ -419,7 +419,7 @@ We keep splitting until the leaf node(s) are pure (only one class remains). We m
 
 ### Splitting based on Classification Error
 
-The *Classification Error* equation is given below:
+The *Classification Error* function is given below:
 
 <p align="center"> <img width="400" src= "/Pics/dt5.gif"> </p>
 
@@ -436,7 +436,7 @@ Let's examine the below tree diagram.
 
 ### Entropy-based Splitting
 
-The *Entropy* equation is given below:
+The *Entropy* function is given below:
 
 <p align="center"> <img width="400" src= "/Pics/dt6.png"> </p>
 
@@ -475,3 +475,12 @@ With Entropy gain, the function has a curve. This allows the average information
 The diagram below depicts this.
 
 <p align="center"> <img width="400" src= "/Pics/dt9.png"> </p>
+
+### The Gini Index
+
+In practice, the *Gini* index is often used for splitting. This function is similar to Entropy as it is also curved. However, unlike Entropy it does not contain a logarithm so it is easier to compute. The diagram below illustrates the comparison between the Classification Error, Cross Entropy and Gini Index.
+
+<p align="center"> <img width="400" src= "/Pics/dt10.png"> </p>
+
+The Gini index function is given below:
+
