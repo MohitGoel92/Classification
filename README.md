@@ -490,3 +490,11 @@ The diagram below illustrates the comparison between the Classification Error, C
 
 **Note:** Getting perfect splits will eventually lead to overfitting. Therefore, if we get down to homogeneous nodes we will overfit. We must therefore ensure the right balance between variance and tradeoff.
 
+### Decision Trees and High Variance
+
+- One of the problems as mentioned above is that Decision Trees tend to add high variance as they tend to overfit. 
+- Since Decision Trees don't make many strong assumptions such as linearly seperable classes, they usually find structures that attempt to explain the training set too well. 
+- Therefore, small changes in the data greatly affect predictions (high variance) as the model does not generalise outside the current dataset. 
+- A solution to this problem is to prune trees. This means we have a preset maximum depth which results in only a certain number of splits being performed.
+- We can prune leaves based on Classification Error threshold. For instance, is a leaf correctly classified 90% of its samples, then that is enough for us. Resulting in no further splitting.
+- 
