@@ -509,3 +509,21 @@ The diagram below illustrates the comparison between the Classification Error, C
 
 The syntax used for Decision Tree Classifier is as follows:
 
+```
+# Importing the class containing the classification method
+
+form sklearn.tree import DecisionTreeClassifier
+
+# Creating an instance of the class
+
+DTC = DecisionTreeClassifier(criterion = 'Gini', max_features = 10, max_depth = 5)
+
+# Fitting the instance on the training set and predicting the test set results
+
+DTC.fit(X_train, y_train)
+y_pred = DTC.predict(X_test)
+
+# We tune parameters with cross-validation.
+# We use DecisionTreeRegressor for regression.
+```
+
