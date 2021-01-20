@@ -257,7 +257,6 @@ y_pred = KNN.predict(X_test)
 
 Regression can be done with KNeighborsRegressor
 ```
-
 # Support Vector Machines
 
 Please see the GitHub page given by the below link for an in depth explanation of classification models, especially for SVM Linear and SVM Gaussian Radial Basis Function (RBF):
@@ -434,7 +433,8 @@ Let's examine the below tree diagram.
 - The third node which is also called the Child node has a classification error of: 1 - 6/8 = 1/4. As 1/4 < 1/3, we conclude that information has been gained.
 - The overall change according to the weighted average of our two new classification errors (Classification Error Change) is: 1/3 - 4/12(1/2) - 8/12(1/4) = 0. This means we have not had any information gained given our new split.
   - If this was the best split possible, we would claim that we should not split the nodes any further. Therefore, using classification error no further splits would occur.
-  - **Note:** We're forced to stop well short of a point where all of our leaves are homogeneous. In other words, the leaves do not contain all yes or all no in each of the child leads/nodes).
+
+**Note:** We're forced to stop well short of a point where all of our leaves are homogeneous. In other words, the leaves do not contain all yes or all no in each of the child leads/nodes).
 
 ### Entropy-based Splitting
 
@@ -493,7 +493,6 @@ The diagram below illustrates the comparison between the Classification Error, C
 **Note:** The most common splitting impurity measure are Entropy and Gini Index.
 
 **Note:** Getting perfect splits will eventually lead to overfitting. Therefore, if we get down to homogeneous nodes we will overfit. We must therefore ensure the right balance between variance and tradeoff.
-
 
 ### Decision Trees and High Variance
 
