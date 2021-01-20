@@ -500,7 +500,7 @@ The diagram below illustrates the comparison between the Classification Error, C
 - Since Decision Trees don't make many strong assumptions such as linearly seperable classes, they usually find structures that attempt to explain the training set too well. 
 - Therefore, small changes in the data greatly affect predictions (high variance) as the model does not generalise outside the current dataset. 
 - A solution to this problem is to prune trees. This means we have a preset maximum depth which results in only a certain number of splits being performed.
-- We can prune leaves based on Classification Error threshold. For instance, if a leaf correctly classified 90% of its samples, then that is enough for us. Resulting in no further splitting.
+- We can prune leaves based on the Classification Error threshold. For instance, if a leaf correctly classifies 90% of its samples, we may deem that that good enough for us; resulting in no further splitting required.
 - We can also prune leaves by deciding a certain threshold of Information Gain. For instace, if we require a certain number of information gain in order to keep splitting.
 - In addition, we may have a minimum amount of rows in the subset which we're no longer allowing further splits.
 
