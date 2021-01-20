@@ -500,13 +500,13 @@ The diagram below illustrates the comparison between the Classification Error, C
 - Since Decision Trees don't make many strong assumptions such as linearly seperable classes, they usually find structures that attempt to explain the training set too well. 
 - Therefore, small changes in the data greatly affect predictions (high variance) as the model does not generalise outside the current dataset. 
 - A solution to this problem is to prune trees. This means we have a preset maximum depth which results in only a certain number of splits being performed.
-- We can prune leaves based on the Classification Error threshold. For instance, if a leaf correctly classifies 90% of its samples, we may deem that that good enough for us; resulting in no further splitting required.
-- We can also prune leaves by deciding a certain threshold of Information Gain. For instace, if we require a certain number of information gain in order to keep splitting.
-- In addition, we may have a minimum amount of rows in the subset which we're no longer allowing further splits.
+- We can prune leaves based on the Classification Error threshold. For instance, if a leaf correctly classifies 90% of its samples, we may deem that good enough for us; resulting in no further splitting required.
+- We can also prune leaves by deciding a certain threshold of Information Gain. For instance, if we require a certain number of information gain in order to keep splitting.
+- In addition, we may have a minimum amount of rows in the subset in which we're no longer allowing further splits.
 
 ### Advantages of the Decision Tree Classifier
 
-- As Decision Trees are a sequence of questions and answers, it's easy to interpret and implement. In other words, we are using an "if ... then ... else" logic.
+- As Decision Trees are a sequence of questions and answers, they're easy to interpret and implement. In other words, we are using an "if ... then ... else" logic.
 - Easy to understand the visualisation and high interpretability. This is hugely advantageous in a business setting as it is easy to communicate the findings to management. For instance, we can logically explain why certain features within subsets make it more likely for customers to churn.
 - The algorithm will easily turn any features into binary features on its own. Therefore being able to handle any data category (binary, ordinal, continuous).
 - As opposed to the distance or linear-based algorithms, we require no scaling.
@@ -516,7 +516,7 @@ The syntax used for Decision Tree Classifier is as follows:
 ```
 # Importing the class containing the classification method
 
-form sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeClassifier
 
 # Creating an instance of the class
 
