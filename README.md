@@ -537,3 +537,5 @@ y_pred = DTC.predict(X_test)
 
 Previously, we have discussed how Decision Trees tend to overfit, and how pruning may help to reduce variance to a certain degree. However, this is often not significant enough for a model to generalise well. An improvement would be to use many trees, where we would now combine the predictions of all the trees to reduce variance.
 
+**Aggregate Results:** Tree vote on or average result for each data point. This is called 'Meta Classification'.
+
