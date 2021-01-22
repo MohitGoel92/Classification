@@ -541,3 +541,4 @@ Previously, we have discussed how Decision Trees tend to overfit, and how prunin
 
 **Bagging:** Bagging stands for Bootstrap Aggregating.
 
+We bootstrap by getting each one of our smaller samples, build out our decision trees and bring together all of those different decision trees of those samples; that's the aggregation step.
