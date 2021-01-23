@@ -591,9 +591,16 @@ The equation below explains how the Bootstrap samples are correlated (ρ):
 
 From the above, we observe that if the correlation is close to one, we end up with no reduction in variance (as we're using similar trees). As a result, we are not gaining any new information. We therefore must ensure that each one of these Decision Trees are somewhat different than one another.
 
-The solution is to further de-correlate trees by introducing randomness. We must try to make sure that the trees are significantly different from one another and this decorrelated. This is achieved by restricting the number of features the trees are allowed to be built from. The number of the random subset of features for each tree is:
+The solution is to further de-correlate trees by introducing randomness. We must try to make sure that the trees are significantly different from one another and thus decorrelated. This is achieved by restricting the number of features the trees are allowed to be built from. The number of the random subsets of features for each tree is:
 
 <p align="center"> <img width="250" src= "/Pics/dt15.png"> </p>
 
 where *m* is the number of randomly selected features.
 
+This resulting algorithm is called ***Random Forest***.
+
+**Random Forest:** A random selection of the subsets of rows and columns of the data, of which are used to produce regression or classification trees.
+
+In general, having extra trees will eventually result in better out-of-sample (new data) accuracy compared to just simple bagging. This is illustrated by the graph below.
+
+<p align="center"> <img width="450" src= "/Pics/dt15.png"> </p>
