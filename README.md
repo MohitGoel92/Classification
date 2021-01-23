@@ -627,3 +627,5 @@ y_pred = RFC.predict(X_test)
 # Use RandomForestRegressor for regression
 ```
 
+But what if Random Forest does not reduce the variance enough? In the cases where Random Forest has overfit, we can introduce even more randomness. Here, we select features randomly and create splits randomly (no fixed number *m* of features to be selected); therefore not choosing greedily. Fittingly, these extra random trees are called ***Extra Random Trees***.
+
