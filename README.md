@@ -543,10 +543,38 @@ Previously, we have discussed how Decision Trees tend to overfit, and how prunin
 
 We bootstrap by getting each one of our smaller samples, build out our decision trees and bring together all of those different decision trees of those samples; that's the aggregation step.
 
-Now a question will arise and it is this, "How many trees do we fit?". This will end up being another hyperparameter that we can tune (the number of trees). The greater the number of trees, the less overfit our Decision Trees will be. In practice however, there's a point of diminishing returns which is usually around 50 trees. Let's observe the graph below which shows the RMSE (Cross-Validated) against the Number of Bagged Trees.
+Now a question will arise and it is this, "How many trees do we fit?". This will end up being another hyperparameter that we can tune (the number of trees). The greater the number of trees, the more overfit our Decision Trees will be. In practice however, there's a point of diminishing returns which is usually around 50 trees. Let's observe the graph below which shows the RMSE (Cross-Validated) against the Number of Bagged Trees.
 
 <p align="center"> <img width="450" src= "/Pics/dt12.png"> </p>
 
 From the above we observe that bagging performance increases as the number of trees increases. Additionally, we observe at around 50 trees the RMSE plateaus, resulting in diminished returns. We should therefore select the optimal number of trees as the greater the number of trees we have, the greater the computational power that is required.
 
+Similar to Decision Trees, Bagging Trees:
+  - Are easy to interpret and implement.
+  - Allow heterogeneous input data (different data types), with no preprocessing required.
+
+Unlike Decision Trees, Bagging Trees:
+  - Less variability than Decision Trees. We reduce the variance, thus increasing the chances of overfitting once we introduce Bagging.
+  - Can grow trees in parallel (each tree is not dependent on any other tree because it's specific to its own dataset).
+
+The syntax used for Bagging is as follows:
+
+```
+# Importing the class containing the classification method
+
+from sklearn.ensemble import BaggingClassifier
+
+# Creating an instance of the class
+
+BC = BaggingClassifier(n_estimators = 50)
+
+# Fitting the instance on the training set and predicting the test set results
+
+BC.fit(X_train, y_train)
+y_pred = BC.predict(X_test)
+
+# Tune parameters with cross-validation
+# Use BaggingRegressor for regression
+
+```
 
