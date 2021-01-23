@@ -607,7 +607,7 @@ In general, having extra trees will eventually result in better out-of-sample (n
 
 From the above, we observe that errors are further reduced for Random Forest relative to Bagging. In addition, we grow enough trees until the error settles down (flattens out). When this happens, additional trees will not improve results.
 
-The syntax used for Bagging is as follows:
+The syntax used for Random Forest is as follows:
 
 ```
 # Importing the class containing the classification method
