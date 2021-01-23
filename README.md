@@ -577,3 +577,8 @@ y_pred = BC.predict(X_test)
 # Use BaggingRegressor for regression
 ```
 
+### Reducing Variance Due to Bagging
+
+If our Bagging produced *n* independent trees, each with variance σ-squared (sigma squared), the bagged variance is:
+
+<p align="center"> <img width="400" src= "/Pics/dt13.png"> </p>
