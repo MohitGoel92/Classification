@@ -589,4 +589,4 @@ The equation below explains how the Bootstrap samples are correlated (ρ):
 
 <p align="center"> <img width="225" src= "/Pics/dt14.png"> </p>
 
-From the above, we observe that if the correlation is close to one, we end up with no reduction in variance (as we're using similar trees). As a result, we are not gaining any new information. We therefore must ensure that each one of these Decision Trees are somewhat dofferent than one another.
+From the above, we observe that if the correlation is close to one, we end up with no reduction in variance (as we're using similar trees). As a result, we are not gaining any new information. We therefore must ensure that each one of these Decision Trees are somewhat different than one another.
