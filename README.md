@@ -575,6 +575,5 @@ y_pred = BC.predict(X_test)
 
 # Tune parameters with cross-validation
 # Use BaggingRegressor for regression
-
 ```
 
