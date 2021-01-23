@@ -582,3 +582,9 @@ y_pred = BC.predict(X_test)
 If our Bagging produced *n* independent trees, each with variance σ-squared (sigma squared), the bagged variance is:
 
 <p align="center"> <img width="30" src= "/Pics/dt13.png"> </p>
+
+Therefore, the larger *n* is (the larger the number of trees we use), assuming they're independent trees, the more we can reduce the overall variance. In reality however, these trees are not independent. As we are sampling with replacement, the trees are very likely correlated.
+
+The equation below explains how the Bootstrap samples are correlated (ρ):
+
+<p align="center"> <img width="30" src= "/Pics/dt14.png"> </p>
