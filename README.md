@@ -604,3 +604,26 @@ This resulting algorithm is called ***Random Forest***.
 In general, having extra trees will eventually result in better out-of-sample (new data) accuracy compared to just simple bagging. This is illustrated by the graph below.
 
 <p align="center"> <img width="450" src= "/Pics/dt16.png"> </p>
+
+From the above, we observe that errors are further reduced for Random Forest relative to Bagging. In addition, we grow enough trees until the error settles down (flattens out). When this happens, additional trees will not improve results.
+
+The syntax used for Bagging is as follows:
+
+```
+# Importing the class containing the classification method
+
+from sklearn.ensemble import RandomForestClassifier
+
+# Creating an instance of the class
+
+RFC = RandomForestClassifier(n_estimators = 50)
+
+# Fitting the instance on the training set and predicting the test set results
+
+RFC.fit(X_train, y_train)
+y_pred = RFC.predict(X_test)
+
+# Tune parameters with cross-validation
+# Use RandomForestRegressor for regression
+```
+
