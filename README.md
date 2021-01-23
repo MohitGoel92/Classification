@@ -593,7 +593,7 @@ From the above, we observe that if the correlation is close to one, we end up wi
 
 The solution is to further de-correlate trees by introducing randomness. We must try to make sure that the trees are significantly different from one another and this decorrelated. This is achieved by restricting the number of features the trees are allowed to be built from. The number of the random subset of features for each tree is:
 
-<p align="center"> <img width="225" src= "/Pics/dt15.png"> </p>
+<p align="center"> <img width="250" src= "/Pics/dt15.png"> </p>
 
 where *m* is the number of randomly selected features.
 
