@@ -547,4 +547,6 @@ Now a question will arise and it is this, "How many trees do we fit?". This will
 
 <p align="center"> <img width="450" src= "/Pics/dt12.png"> </p>
 
-From the above we observe that bagging performance increases with the number of trees we have. Additionally, we observe at around 50 trees the RMSE plateaus
+From the above we observe that bagging performance increases as the number of trees increases. Additionally, we observe at around 50 trees the RMSE plateaus, resulting in diminished returns. We should therefore select the optimal number of trees as the greater the number of trees we have, the greater the computational power that is required.
+
+
