@@ -607,6 +607,8 @@ In general, having extra trees will eventually result in better out-of-sample (n
 
 From the above, we observe that errors are further reduced for Random Forest relative to Bagging. In addition, we grow enough trees until the error settles down (flattens out). When this happens, additional trees will not improve results.
 
+**Note:** The main difference between Random Forest and Bagging is that Random Forest introduces more randomness by using only a subset of features, not only subsets of observation. In general, they tend to have better out of sample accuracy.
+
 The syntax used for Random Forest is as follows:
 
 ```
@@ -647,3 +649,4 @@ y_pred = ETC.predict(X_test)
 # Use ExtraTreeRegressor for regression
 ```
 
+**Note:** In general, Ensemble models tend to have less overfitting than single models. This is also the case for Bagging, compared to Decision Trees. For instance, Bagging has less overfitting than Decision Trees.
