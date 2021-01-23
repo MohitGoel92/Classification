@@ -629,3 +629,21 @@ y_pred = RFC.predict(X_test)
 
 But what if Random Forest does not reduce the variance enough? In the cases where Random Forest has overfit, we can introduce even more randomness. Here, we select features randomly and create splits randomly (no fixed number *m* of features to be selected); therefore not choosing greedily. Fittingly, these extra random trees are called ***Extra Random Trees***.
 
+```
+# Importing the class containing the classification method
+
+from sklearn.ensemble import ExtraTreeClassifier
+
+# Creating an instance of the class
+
+ETC = ExtraTreeClassifier(n_estimators = 50)
+
+# Fitting the instance on the training set and predicting the test set results
+
+ETC.fit(X_train, y_train)
+y_pred = ETC.predict(X_test)
+
+# Tune parameters with cross-validation
+# Use ExtraTreeRegressor for regression
+```
+
