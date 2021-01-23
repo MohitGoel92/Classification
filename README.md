@@ -603,4 +603,4 @@ This resulting algorithm is called ***Random Forest***.
 
 In general, having extra trees will eventually result in better out-of-sample (new data) accuracy compared to just simple bagging. This is illustrated by the graph below.
 
-<p align="center"> <img width="450" src= "/Pics/dt15.png"> </p>
+<p align="center"> <img width="450" src= "/Pics/dt16.png"> </p>
