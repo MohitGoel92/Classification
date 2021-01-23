@@ -537,11 +537,11 @@ y_pred = DTC.predict(X_test)
 
 Previously, we have discussed how Decision Trees tend to overfit, and how pruning may help to reduce variance to a certain degree. However, this is often not significant enough for a model to generalise well. An improvement would be to use many trees, where we would now combine the predictions of all the trees to reduce variance.
 
-**Aggregate Results:** Trees vote on or average the results for each data point. This is called 'Meta Classification'.
+**Aggregate Results:** Trees vote on or average the results for each data point. This is called 'Meta Classification'. 
 
-**Bagging:** Bagging stands for Bootstrap Aggregating.
+**Bagging:** Bagging stands for Bootstrap Aggregating. Bagging is a tree ensemble that combines the predictions of several trees that we've trained on Bootstrap samples of data.
 
-We bootstrap by getting each one of our smaller samples, build out our decision trees and bring together all of those different decision trees of those samples; that's the aggregation step.
+We bootstrap by getting each one of our smaller samples, build out our decision trees and bring together all of those different decision trees of those samples; that's the aggregation step. A model that averages the predictions of multiple models reduces the variance of a single model and has high chances to generalise well when scoring new data.
 
 Now a question will arise and it is this, "How many trees do we fit?". This will end up being another hyperparameter that we can tune (the number of trees). The greater the number of trees, the more overfit our Decision Trees will be. In practice however, there's a point of diminishing returns which is usually around 50 trees. Let's observe the graph below which shows the RMSE (Cross-Validated) against the Number of Bagged Trees.
 
