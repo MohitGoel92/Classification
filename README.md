@@ -542,3 +542,7 @@ Previously, we have discussed how Decision Trees tend to overfit, and how prunin
 **Bagging:** Bagging stands for Bootstrap Aggregating.
 
 We bootstrap by getting each one of our smaller samples, build out our decision trees and bring together all of those different decision trees of those samples; that's the aggregation step.
+
+Now a question will arise and it is this, "How many trees do we fit?". This will end up being another hyperparameter that we can tune (the number of trees). The greater the number of trees, the less overfit our Decision Trees will be. In practice however, there's a point of diminishing returns which is usually around 50 trees. Let's observe the graph below which shows the RMSE (Cross_validated) against the Number of Bagged Trees.
+
+<p align="center"> <img width="450" src= "/Pics/dt12.png"> </p>
