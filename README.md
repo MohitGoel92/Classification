@@ -587,4 +587,4 @@ Therefore, the larger *n* is (the larger the number of trees we use), assuming t
 
 The equation below explains how the Bootstrap samples are correlated (ρ):
 
-<p align="center"> <img width="80" src= "/Pics/dt14.png"> </p>
+<p align="center"> <img width="150" src= "/Pics/dt14.png"> </p>
