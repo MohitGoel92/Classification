@@ -581,4 +581,4 @@ y_pred = BC.predict(X_test)
 
 If our Bagging produced *n* independent trees, each with variance σ-squared (sigma squared), the bagged variance is:
 
-<p align="center"> <img width="400" src= "/Pics/dt13.png"> </p>
+<p align="center"> <img width="40" src= "/Pics/dt13.png"> </p>
