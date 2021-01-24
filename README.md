@@ -655,8 +655,13 @@ y_pred = ETC.predict(X_test)
 
 # Boosting and Stacking
 
-As opposed to Bagging, whose main function is to find a way of reducing variance, Boosting also helps with reducing variance but is meant for business problems where we may want to continue to better fit or correct our model. This enables us to even get rare events correct. Consequently, unlike Bagging it is easier to overfit the data.
+As opposed to Bagging, whose main function is to find a way of reducing variance, Boosting also helps with reducing variance but is meant for business problems where we may want to continue to better fit or correct our model. This enables us to correctly capture rare events. Consequently, unlike Bagging it is easier to overfit the data.
 
 **Note:** For Bagging the trees are independent of each other but for Boosting the trees depend on the prior, therefore being dependent on each other.
 
-In Bagging, we grow Decision Trees from multiple bootstrapped samples. We vote on the trees or average the results for each data point (aggregate results). 
+In Bagging, we grow Decision Trees from multiple bootstrapped samples. We vote on the trees or average the results for each data point (aggregate results). For Boosting, we have a weighting of our different trees with different weights.
+
+**Note:** A Decision Tree with just one split is called a *Decision Stump*.
+
+
+
