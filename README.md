@@ -539,9 +539,11 @@ Previously, we have discussed how Decision Trees tend to overfit, and how prunin
 
 **Aggregate Results:** Trees vote on or average the results for each data point. This is called 'Meta Classification'. 
 
-**Bagging:** Bagging stands for Bootstrap Aggregating. Bagging is a tree ensemble that combines the predictions of several trees that we've trained on Bootstrap samples of data.
+**Bagging:** Bagging stands for Bootstrap Aggregating. Bagging is an ensemble algorithm that combines the predictions of several models that we've trained on Bootstrap samples of data.
 
-We bootstrap by getting each one of our smaller samples, build out our decision trees and bring together all of those different decision trees of those samples; that's the aggregation step. A model that averages the predictions of multiple models reduces the variance of a single model and has high chances to generalise well when scoring new data.
+We bootstrap by getting each one of our smaller samples, build out our decision trees and bring together all of those different decision trees of those samples; that's the aggregation step. A model that averages the predictions of multiple models reduces the variance of a single model and has high chances to generalise well when scoring new data. The diagram below clarifies this.
+
+<p align="center"> <img width="450" src= "/Pics/bs1.png"> </p>
 
 Now a question will arise and it is this, "How many trees do we fit?". This will end up being another hyperparameter that we can tune (the number of trees). The greater the number of trees, the more overfit our Decision Trees will be. In practice however, there's a point of diminishing returns which is usually around 50 trees. Let's observe the graph below which shows the RMSE (Cross-Validated) against the Number of Bagged Trees.
 
@@ -649,4 +651,12 @@ y_pred = ETC.predict(X_test)
 # Use ExtraTreeRegressor for regression
 ```
 
-**Note:** In general, Ensemble models tend to have less overfitting than single models. This is also the case for Bagging, compared to Decision Trees. For instance, Bagging has less overfitting than Decision Trees.
+**Note:** In general, Ensemble models tend to have less overfitting than single models. This is also the case for Bagging when compared to Decision Trees. Therefore concluding that Bagging has less overfitting than Decision Trees.
+
+# Boosting and Stacking
+
+As opposed to Bagging, whose main function is to find a way of reducing variance, Boosting also helps with reducing variance but is meant for business problems where we may want to continue to better fit or correct our model. This enables us to even get rare events correct. Consequently, unlike Bagging it is easier to overfit the data.
+
+**Note:** For Bagging the trees are independent of each other but for Boosting the trees depend on the prior, therefore being dependent on each other.
+
+In Bagging, we grow Decision Trees from multiple bootstrapped samples. We vote on the trees or average the results for each data point (aggregate results). 
