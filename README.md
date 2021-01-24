@@ -663,5 +663,3 @@ In Bagging, we grow Decision Trees from multiple bootstrapped samples. We vote o
 
 **Note:** A Decision Tree with just one split is called a *Decision Stump*.
 
-
-
