@@ -667,7 +667,7 @@ In Bagging, we grow Decision Trees from multiple bootstrapped samples. We vote o
 
 The diagram below illustrates how Boosting will work on a small dataset.
 
-<p align="center"> <img width="450" src= "/Pics/bs2.png"> </p>
+<p align="center"> <img width="550" src= "/Pics/bs2.png"> </p>
 
 - Firstly, we create an initial decision stump with one node and two leaves, which results in the splitting of our dataset into two. 
 - After the split, we calculate the residuals by attributing a larger weight to the misclassified points, so if the subsequent weak learner misclassifies them again, a greater weight is attributed. 
@@ -677,7 +677,7 @@ The diagram below illustrates how Boosting will work on a small dataset.
 
 The result is a weighted sum of classifiers, where the successive classifiers are weighted by the *Learning Rate* λ. This is depicted by the diagram below.
 
-<p align="center"> <img width="450" src= "/Pics/bs3.png"> </p>
+<p align="center"> <img width="550" src= "/Pics/bs3.png"> </p>
 
 **Learning Rate (λ):** 
 - The learning rate is the magnitude of allowable correctness of our errors at each one of our steps.
