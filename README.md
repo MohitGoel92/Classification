@@ -670,5 +670,19 @@ The diagram below illustrates how Boosting will work on a small dataset.
 <p align="center"> <img width="450" src= "/Pics/bs2.png"> </p>
 
 - Firstly, we create an initial decision stump with one node and two leaves, which results in the splitting of our dataset into two. 
-- After the split, we calculate the residuals by attributing a larger weight to the misclassified points, so if the next weak learner misclassifies them again, a greater weight is attributed. 
+- After the split, we calculate the residuals by attributing a larger weight to the misclassified points, so if the subsequent weak learner misclassifies them again, a greater weight is attributed. 
 - On the contrary, we lower the weights of the points that the first weak learner got correct. This is a fundamental aspect in Boosting.
+
+**Note:** The new decision stumps that are produced to be combined as the final classifier are called weak learners. Better classifiers get more weight.
+
+The result is a weighted sum of classifiers, where the successive classifiers are weighted by the *Learning Rate* λ. This is depicted by the diagram below.
+
+<p align="center"> <img width="450" src= "/Pics/bs3.png"> </p>
+
+**Learning Rate (λ):** 
+- The learning rate is the magnitude of allowable correctness of our errors at each one of our steps.
+- It is a hyperparameter which decides how much weight we provide to each of our successive decision trees.
+- A lower learning rate will mean more trees are desirable, as we are correcting our errors at a very slow pace.
+- A higher learning rate will mean an easier overfit by allowing each successive tree to have too much influence on our final decision.
+- This goes back to the bias-variance tradeoff where lower variance implies higher bias (less overfitting), and higher variance indicates lower bias (more overfitting).
+- A learning rate (λ) < 1 will prevent overfitting (regularisation).
