@@ -663,5 +663,12 @@ In Bagging, we grow Decision Trees from multiple bootstrapped samples. We vote o
 
 **Note:** A Decision Tree with just one split is called a *Decision Stump*.
 
-### Boosting at a Glance
+### Boosting Overview
 
+The diagram below illustrates how Boosting will work on a small dataset.
+
+<p align="center"> <img width="450" src= "/Pics/bs2.png"> </p>
+
+- Firstly, we create an initial decision stump with one node and two leaves, which results in the splitting of our dataset into two. 
+- After the split, we calculate the residuals by attributing a larger weight to the misclassified points, so if the next weak learner misclassifies them again, a greater weight is attributed. 
+- On the contrary, we lower the weights of the points that the first weak learner got correct. This is a fundamental aspect in Boosting.
