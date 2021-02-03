@@ -721,4 +721,4 @@ The diagram below illustrates the the loss functions discussed above.
 
 ### Bagging Vs Boosting
 
-<p align="center"> <img width="450" src= "/Pics/bs6.png"> </p>
+<p align="center"> <img width="550" src= "/Pics/bs7.png"> </p>
