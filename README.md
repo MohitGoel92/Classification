@@ -711,3 +711,10 @@ Boosting utilises different loss functions.
 
 **Gradient Boosting Loss Function**
 
+- Gradient Boosting is a generalised Boosting method that can use various loss function.
+- The common implementation uses binomial log likelihood loss function (deviance), it is given by: log(1 + e^(-margin)).
+- This is more robust to outliers than AdaBoost.
+
+The diagram below illustrates the the loss functions discussed above.
+
+<p align="center"> <img width="350" src= "/Pics/bs5.png"> </p>
