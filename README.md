@@ -691,7 +691,7 @@ The result is a weighted sum of classifiers, where the successive classifiers ar
 
 Boosting utilises different loss functions.
 
-<p align="center"> <img width="350" src= "/Pics/bs4.png"> </p>
+<p align="center"> <img width="450" src= "/Pics/bs4.png"> </p>
 
 - At each stage, or for each of our weak learners, the margin is determined for each point.
 - The margin is positive for the correctly classified points and negative for the misclassifications.
@@ -711,10 +711,10 @@ Boosting utilises different loss functions.
 
 **Gradient Boosting Loss Function**
 
-- Gradient Boosting is a generalised Boosting method that can use various loss function.
-- The common implementation uses binomial log likelihood loss function (deviance), it is given by: log(1 + e^(-margin)).
+- Gradient Boosting is a generalised Boosting method that can use various loss functions.
+- The common implementation uses the binomial log likelihood loss function (deviance), it is given by: log(1 + e^(-margin)).
 - This is more robust to outliers than AdaBoost.
 
 The diagram below illustrates the the loss functions discussed above.
 
-<p align="center"> <img width="350" src= "/Pics/bs5.png"> </p>
+<p align="center"> <img width="450" src= "/Pics/bs5.png"> </p>
