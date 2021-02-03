@@ -691,5 +691,5 @@ The result is a weighted sum of classifiers, where the successive classifiers ar
 
 Boosting utilises different loss functions.
 
-<p align="center"> <img width="450" src= "/Pics/bs4.png"> </p>
+<p align="center"> <img width="350" src= "/Pics/bs4.png"> </p>
 
