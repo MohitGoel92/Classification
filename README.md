@@ -727,5 +727,5 @@ The table below summarises the key difference between Bagging and Boosting.
 
 **Note:** When tuning a gradient boosted model, we must remember that as Boosting is additive, overfitting is now likely. This is due to the increased trees trying to continually improve on mistakes that were made by prior trees, therefore continually trying to improve off the errors from the past. We must use cross-validation to set the numer of tree. The diagram below compares the Test Set Error for the number of iterations for Boosting and Random Forest.
 
-<p align="center"> <img width="550" src= "/Pics/bs8.png"> </p>
+<p align="center"> <img width="450" src= "/Pics/bs8.png"> </p>
 
