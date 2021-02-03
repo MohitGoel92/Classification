@@ -675,7 +675,7 @@ The diagram below illustrates how Boosting will work on a small dataset.
 
 **Note:** The new decision stumps that are produced to be combined as the final classifier are called weak learners. Better classifiers get more weight.
 
-The result is a weighted sum of classifiers, where the successive classifiers are weighted by the *Learning Rate* λ. This is depicted by the diagram below.
+The result is a weighted sum of classifiers, where the successive classifiers are weighted by the *Learning Rate* (λ). This is depicted by the diagram below.
 
 <p align="center"> <img width="550" src= "/Pics/bs3.png"> </p>
 
@@ -686,3 +686,10 @@ The result is a weighted sum of classifiers, where the successive classifiers ar
 - A higher learning rate will mean an easier overfit by allowing each successive tree to have too much influence on our final decision.
 - This goes back to the bias-variance tradeoff where lower variance implies higher bias (less overfitting), and higher variance indicates lower bias (more overfitting).
 - A learning rate (λ) < 1 will prevent overfitting (regularisation).
+
+### Loss Functions
+
+Boosting utilises different loss functions.
+
+<p align="center"> <img width="450" src= "/Pics/bs4.png"> </p>
+
