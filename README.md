@@ -721,4 +721,11 @@ The diagram below illustrates the the loss functions discussed above.
 
 ### Bagging Vs Boosting
 
+The table below summarises the key difference between Bagging and Boosting.
+
 <p align="center"> <img width="550" src= "/Pics/bs7.png"> </p>
+
+**Note:** When tuning a gradient boosted model, we must remember that as Boosting is additive, overfitting is now likely. We must use cross-validation to set the numer of tree. The diagram below compares the Test Set Error for the number of iterations for Boosting and Random Forest.
+
+<p align="center"> <img width="550" src= "/Pics/bs8.png"> </p>
+
