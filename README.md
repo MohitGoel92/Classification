@@ -697,3 +697,5 @@ Boosting utilises different loss functions.
 - The margin is positive for the correctly classified points and negative for the misclassifications.
 - The value of the loss function is calculated from the margin. It can be thought of as the distance from our decision boundary (from the margin). This allows us to heavily penalise faraway points.
 
+**0-1 Loss Function:**
+
