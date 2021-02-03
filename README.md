@@ -697,5 +697,17 @@ Boosting utilises different loss functions.
 - The margin is positive for the correctly classified points and negative for the misclassifications.
 - The value of the loss function is calculated from the margin. It can be thought of as the distance from our decision boundary (from the margin). This allows us to heavily penalise faraway points.
 
-**0-1 Loss Function:**
+**0-1 Loss Function**
+
+- This loss function multiplies the misclassified points by 1, and multiplies the correctly classified points by 0.
+- Therefore, correctly classified points are ignored.
+- Although this is theoretically the ideal loss function, it is not used in reality. This is because it is difficult to optimise, as it is non-smooth and non-convex.
+
+**AdaBoost Loss Function**
+
+- AdaBoost = Adaptive Boosting.
+- The AdaBoost loss function is exponential, it is given by: e^(-margin)
+- This makes AdaBoost more sensitive to outliers or further away points, compared to other types of Boosting. If the distance from our margin is large and incorrect, we end up with a large contribution to that overall error for that given point.
+
+**Gradient Boosting Loss Function**
 
