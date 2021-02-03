@@ -718,3 +718,7 @@ Boosting utilises different loss functions.
 The diagram below illustrates the the loss functions discussed above.
 
 <p align="center"> <img width="450" src= "/Pics/bs5.png"> </p>
+
+### Bagging Vs Boosting
+
+<p align="center"> <img width="450" src= "/Pics/bs6.png"> </p>
