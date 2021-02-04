@@ -786,3 +786,9 @@ y_pred = ABC.predict(X_test)
 # Tune parameters with cross-validation
 # Use AdaBoostRegressor for regression
 ```
+
+# Stacking: Combining Classifiers
+
+The diagram below gives an overview of how Stacking works.
+
+<p align="center"> <img width="550" src= "/Pics/bs10.png"> </p>
