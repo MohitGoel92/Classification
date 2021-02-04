@@ -731,5 +731,5 @@ The table below summarises the key difference between Bagging and Boosting.
 
 ### Tuning a Gradient Boosted Model
 
-<p align="center"> <img width="450" src= "/Pics/bs9.png"> </p>
+<p align="center"> <img width="550" src= "/Pics/bs9.png"> </p>
 
