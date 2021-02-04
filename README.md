@@ -731,5 +731,9 @@ The table below summarises the key difference between Bagging and Boosting.
 
 ### Tuning a Gradient Boosted Model
 
+The diagram belows compares the Test Set Error for the number of iterations with different parameters.
+
 <p align="center"> <img width="550" src= "/Pics/bs9.png"> </p>
 
+- For the base line, the Learning Rate (λ) is set to less than 1 for regularisation. The lower the Learning Rate, the higher the number of trees we may use as the Learning Rate represents how much we're correcting the model at each step. So these two hyperparameters (Learning Rate and number of trees) are going to be related.
+- For λ = 0.1, as λ < 1, this is also called *Shrinkage*.
