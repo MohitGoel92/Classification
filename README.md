@@ -792,3 +792,12 @@ y_pred = ABC.predict(X_test)
 The diagram below gives an overview of how Stacking works.
 
 <p align="center"> <img width="550" src= "/Pics/bs10.png"> </p>
+
+- This is similar to Bagging, but we are not limited to Decision Trees.
+- Models of any kind can be combined to create a stacked model.
+- The output of the base learners create features (Meta Features) that we use to combine with the data, feeding it into the final classifier.
+- We train several different algorithms, and we think of this as testing many different assumptions in our dataset.
+- The output of the base learners can be combined via majority vote or weighted.
+- Additional hold-out data is needed if meta learner parameters are used.
+
+**Note:** We must be aware of increasing model complexity, or in other words, overfitting which is what we wish to avoid. The final prediction is achieved by voting or with an alternative model.
