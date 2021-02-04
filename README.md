@@ -739,7 +739,50 @@ The diagram belows compares the Test Set Error for the number of iterations with
 - For λ = 0.1, as λ < 1, this is also called *Shrinkage* as it shrinks the impact of each successive learner.
 - Another parameter we can use to add randomness in order to reduce overfitting is the subsample. For subsample < 1, we use a fraction of the dataset for the base learners. This is called *Stochastic Gradient Boosting*. By using a subsample, our base learners don't train on the entire dataset. This alone allows for faster optimisation, as well as a bit of regularisation as it will not perfectly fit to our entire dataset.
 - From the graph, we observe that using a combination of the Learning Rate (λ) = 0.1 and subsample = 0.5, we obtain a good result.
-- Max_features is the number of features to consider in base learners when splitting. This reduces the possible complexity of our model, resulting in improving our test set error.
+- Max_features is the number of features to consider in the base learners when splitting. This reduces the possible complexity of our model, resulting in improving our test set error. When using the combination of λ = 0.1 and max_features = 2, we observe that we have obtained a respectable result.
 
 **Note:** In practice, the performance of the hyperparameter tuning will depend on the dataset. As usual, we may use cross-validation when deciding between each one of the hyperparameters.
 
+The syntax used for Gradient Boosting Classifier is as follows:
+
+```
+# Importing the class containing the classification method
+
+from sklearn.ensemble import GradientBoostingClassifier
+
+# Creating an instance of the class
+# Note: learning_rate = 0.1 is a usual choice, max_features = 1 is a lower than usual choice (higher bias, lower variance), subsample = 0.5 is a usual choice, and n_estimators = 200 also a usual choice but should be optimised.
+
+GBC = GradientBoostingClassifier(learning_rate = 0.1, max_features = 1, subsample = 0.5, n_estimators = 200)
+
+# Fitting the instance on the training set and predicting the test set results
+
+GBC.fit(X_train, y_train)
+y_pred = GBC.predict(X_test)
+
+# Tune parameters with cross-validation
+# Use GradientBoostingRegressor for regression
+```
+**Note:** For Boosting, we require successive trees. As a result, as we have a lot of trees, a lot of time may be taken to fit our model. Time considerations must therefore be taken into account.
+
+The syntax used for Adaptive Boosting classifier is as follows:
+
+```
+# Importing the class containing the classification method
+
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.tree import DecisionTreeClassifier
+
+# Creating an instance of the class
+# Note: The base learner can be set manually, in addition to setting the max depth.
+
+ABC = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(), learning_rate = 0.1, n_estimators = 200)
+
+# Fitting the instance on the training set and predicting the test set results
+
+ABC.fit(X_train, y_train)
+y_pred = ABC.predict(X_test)
+
+# Tune parameters with cross-validation
+# Use AdaBoostRegressor for regression
+```
