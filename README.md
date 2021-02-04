@@ -736,4 +736,10 @@ The diagram belows compares the Test Set Error for the number of iterations with
 <p align="center"> <img width="550" src= "/Pics/bs9.png"> </p>
 
 - For the base line, the Learning Rate (λ) is set to less than 1 for regularisation. The lower the Learning Rate, the higher the number of trees we may use as the Learning Rate represents how much we're correcting the model at each step. So these two hyperparameters (Learning Rate and number of trees) are going to be related.
-- For λ = 0.1, as λ < 1, this is also called *Shrinkage*.
+- For λ = 0.1, as λ < 1, this is also called *Shrinkage* as it shrinks the impact of each successive learner.
+- Another parameter we can use to add randomness in order to reduce overfitting is the subsample. For subsample < 1, we use a fraction of the dataset for the base learners. This is called *Stochastic Gradient Boosting*. By using a subsample, our base learners don't train on the entire dataset. This alone allows for faster optimisation, as well as a bit of regularisation as it will not perfectly fit to our entire dataset.
+- From the graph, we observe that using a combination of the Learning Rate (λ) = 0.1 and subsample = 0.5, we obtain a good result.
+- Max_features is the number of features to consider in base learners when splitting. This reduces the possible complexity of our model, resulting in improving our test set error.
+
+**Note:** In practice, the performance of the hyperparameter tuning will depend on the dataset. As usual, we may use cross-validation when deciding between each one of the hyperparameters.
+
