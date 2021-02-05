@@ -665,6 +665,8 @@ In Bagging, we grow Decision Trees from multiple bootstrapped samples. We vote o
 
 ### Boosting Overview
 
+Boosting methods are additive in the sense that they sequentially retrain Decision Trees using the observations with the highest residuals on the previous tree. To do so, observations with a high residual are assigned a higher weight.
+
 The diagram below illustrates how Boosting will work on a small dataset.
 
 <p align="center"> <img width="550" src= "/Pics/bs2.png"> </p>
@@ -790,6 +792,8 @@ y_pred = ABC.predict(X_test)
 ```
 
 # Stacking: Combining Classifiers
+
+Stacking is an ensemble method that combines any type of model by combining the predicted probabilities of classes. In that sense, it is a generalised case of bagging. The two most common ways to combine the predicted probabilities in stacking are: using a majority vote or using weights for each predicted probability.
 
 The diagram below gives an overview of how Stacking works.
 
