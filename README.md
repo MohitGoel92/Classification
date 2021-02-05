@@ -793,11 +793,36 @@ The diagram below gives an overview of how Stacking works.
 
 <p align="center"> <img width="550" src= "/Pics/bs10.png"> </p>
 
-- This is similar to Bagging, but we are not limited to Decision Trees.
-- Models of any kind can be combined to create a stacked model.
-- The output of the base learners create features (Meta Features) that we use to combine with the data, feeding it into the final classifier.
-- We train several different algorithms, and we think of this as testing many different assumptions in our dataset.
+- This is similar to Bagging, but we are not limited to Decision Trees. The base learners can be anything, so there is no bias towards needing to use a decision tree, which is an ensemble method in itself.
+- The idea is to fit several algorithms to our training set and use their predictions (or scores) of each of the individual base learners as a new training set.
+- The output of each of the base learners creates features known as *Meta Features*, that we use to combine with the data, feeding it into the final classifier.
+- The final classifier is called the *Meta Classifier*, and it is used to arrive at a single prediction.
+- We train several different algorithms, and we think of this as testing many different assumptions on our dataset.
 - The output of the base learners can be combined via majority vote or weighted.
-- Additional hold-out data is needed if meta learner parameters are used.
+
+**Note:** An additional hold-out and test set is needed for each classifier if meta learner parameters are used.
 
 **Note:** We must be aware of increasing model complexity, or in other words, overfitting which is what we wish to avoid. The final prediction is achieved by voting or with an alternative model.
+
+The syntax used for Voting Classifier is as follows:
+
+```
+# Importing the class containing the classification method
+
+from sklearn.ensemble import VotingClassifier
+
+# Creating an instance of the class
+# Note: This is a list of the fitted models and we are to combine them.
+
+VC = VotingClassifier(estimator_list)
+
+# Fitting the instance on the training set and predicting the test set results
+
+VC.fit(X_train, y_train)
+y_pred = VC.predict(X_test)
+
+# Use VotingRegressor for regression.
+# The StackingClassifier (for StackingRegressor) works similarly:
+
+SC = StackingClassifier(estimator_list, final_estimator = LogisticRegression())
+```
