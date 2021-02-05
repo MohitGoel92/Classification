@@ -687,6 +687,8 @@ The result is a weighted sum of classifiers, where the successive classifiers ar
 - This goes back to the bias-variance tradeoff where lower variance implies higher bias (less overfitting), and higher variance indicates lower bias (more overfitting).
 - A learning rate (λ) < 1 will prevent overfitting (regularisation).
 
+**Note:** The nature of Boosting algorithms tend to produce good results in the presence of outliers and rare events.
+
 ### Loss Functions
 
 Boosting utilises different loss functions.
@@ -804,7 +806,11 @@ The diagram below gives an overview of how Stacking works.
 
 **Note:** We must be aware of increasing model complexity, or in other words, overfitting which is what we wish to avoid. The final prediction is achieved by voting or with an alternative model.
 
-The syntax used for Voting Classifier is as follows:
+**Note:** Taking the average of each possibility is called *Soft Voting*. If we have a certain model that is very certain that the data point should be classified as 0 or 1, we will allow that to have more weight.
+
+The syntax used for Voting Classifier is given below. 
+
+**Note:** A Voting Classifier is the type of ensemble that we would use to combine several classifiers.
 
 ```
 # Importing the class containing the classification method
@@ -826,3 +832,4 @@ y_pred = VC.predict(X_test)
 
 SC = StackingClassifier(estimator_list, final_estimator = LogisticRegression())
 ```
+**Note:** XGBoost is another popular Boosting algorithm, but is not in scikit-learn. This involves essential gradient Boosting with a little parallelisation which allows us to speed up how fast we are able to fit our model.
