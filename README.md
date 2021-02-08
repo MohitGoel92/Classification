@@ -837,3 +837,19 @@ y_pred = VC.predict(X_test)
 SC = StackingClassifier(estimator_list, final_estimator = LogisticRegression())
 ```
 **Note:** XGBoost is another popular Boosting algorithm, but is not in scikit-learn. This involves essential gradient Boosting with a little parallelisation which allows us to speed up how fast we are able to fit our model.
+
+# Unbalanced Classes
+
+Classifiers are usually built to optimise accuracy and hence often perform poorly on unbalanced classes. For unbalanced datasets, we can balance the size of the classes by either downsampling the majority class or upsampling the minority class.
+
+**Downsample:** We randomly select the same number of samples of the majority class that exist in the minority class. This is demonstrated by the diagram below.
+
+<p align="center"> <img width="450" src= "/Pics/uc1.png"> </p>
+
+**Upsample:** We create copies of the minority class until we have a balanced sample. This is demonstrated by the diagram below.
+
+<p align="center"> <img width="450" src= "/Pics/uc2.png"> </p>
+
+**Resample:** We set a number of which each of the minority and majorty class should contain. We then increase the minority set and decrease the majority set appropriately until we achieve balanced classes. This is demonstrated by the diagram below.
+
+<p align="center"> <img width="450" src= "/Pics/uc3.png"> </p>
