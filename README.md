@@ -842,6 +842,12 @@ SC = StackingClassifier(estimator_list, final_estimator = LogisticRegression())
 
 Classifiers are usually built to optimise accuracy and hence often perform poorly on unbalanced classes. For unbalanced datasets, we can balance the size of the classes by either downsampling the majority class or upsampling the minority class.
 
+With unbalanced classes, the data often isn't easily seperable. We must choose to make sacrifices to one class or the other.
+
+For instance, for every minority class data point identified as such, we may wrongly label a few of the majority class points as the minority class. By upsampling or downsampling, we may add more weight to the features relating to the minority class as a proportion of the full dataset. This may result in wrongly labelling a few majority class points.
+
+**Note:** As recall goes up, precision is likely to go down.
+
 **Downsample:** We randomly select the same number of samples of the majority class that exist in the minority class. This is demonstrated by the diagram below.
 
 <p align="center"> <img width="450" src= "/Pics/uc1.png"> </p>
@@ -856,11 +862,7 @@ Classifiers are usually built to optimise accuracy and hence often perform poorl
 
 <p align="center"> <img width="450" src= "/Pics/uc3.png"> </p>
 
-With unbalanced classes, the data often isn't easily seperable. We must choose to make sacrifices to one class or the other.
 
-For instance, for every minority class data point identified as such, we may wrongly label a few of the majority class points as the minority class. By upsampling or downsampling, we may add more weight to the features relating to the minority class as a proportion of the full dataset. This may result in wrongly labelling a few majority class points.
-
-**Note:** As recall goes up, precision is likely to go down.
 
 ### Steps for Unbalanced Datasets
 
