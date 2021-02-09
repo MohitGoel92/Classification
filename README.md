@@ -870,7 +870,14 @@ Below is a digram of the ROC curve comparing different samples sizes. The sample
 
 <p align="center"> <img width="400" src= "/Pics/uc4.png"> </p>
 
-From the above, we observe that a higher value for our sampling techniques is better.
+From the above, we observe that a higher value for our sampling technique is better.
+
+**Notes:**
+
+- Every classifier used produces a different model.
+- Every dataset we use that is produced by various sampling will produce a different model.
+- We can choose the best model using any criteria including AUC (Area Under Curve). We must remember that each model produces a different ROC curve.
+- Once a model is chosen, you can walk along the ROC curve and pick any point on it. Each point has different precision/recall values.
 
 ### Steps for Unbalanced Datasets
 
@@ -880,4 +887,6 @@ From the above, we observe that a higher value for our sampling techniques is be
 **Note:** Perform the split before we upsample or downsample as, if we upsample before the split, we may have duplicate observations in the training and test sets.
 
 - Build the model.
+
+### Modelling Approaches
 
