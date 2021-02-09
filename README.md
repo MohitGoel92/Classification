@@ -852,17 +852,25 @@ For instance, for every minority class data point identified as such, we may wro
 
 <p align="center"> <img width="450" src= "/Pics/uc1.png"> </p>
 
-
+Downsampling adds tremendous importance to the minor class, typically shooting up the recall and bringing down precision. Values like 0.8 recall and 0.15 precision are not uncommon. Increasing the ability of our model to correctly predict the minority class will be at the cost of losing a lot of valuable data that may help us in predicting the majority class.
 
 **Upsample:** We create copies of the minority class until we have a balanced sample. This is demonstrated by the diagram below.
 
 <p align="center"> <img width="450" src= "/Pics/uc2.png"> </p>
 
+Upsampling mitigates some of the excessive weight on the minor class. Recall is still typically higher than precision, but the gap is lesser. Values like 0.7 recall and 0.4 precision are not uncommon, and are often considered good results for an unbalanced dataset. The downside here is that we are then fitting to duplications of the same data in the minority class, thus giving more weight to and overfitting to these repeated rows.
+
 **Resample:** We set a number of which each of the minority and majorty class should contain. We then increase the minority set and decrease the majority set appropriately until we achieve balanced classes. This is demonstrated by the diagram below.
 
 <p align="center"> <img width="450" src= "/Pics/uc3.png"> </p>
 
+Cross-validation works for any global model-making choice, including sampling. It is not only used for finding optimal hyperparameters of the model.
 
+Below is a digram of the ROC curve comparing different samples sizes. The sample size 's' being the number of rows for both the minority and majority class.
+
+<p align="center"> <img width="450" src= "/Pics/uc4.png"> </p>
+
+From the above, we observe that a higher value for our sampling techniques is better.
 
 ### Steps for Unbalanced Datasets
 
