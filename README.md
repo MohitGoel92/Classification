@@ -868,7 +868,7 @@ Cross-validation works for any global model-making choice, including sampling. I
 
 Below is a digram of the ROC curve comparing different samples sizes. The sample size 's' being the number of rows for both the minority and majority class.
 
-<p align="center"> <img width="450" src= "/Pics/uc4.png"> </p>
+<p align="center"> <img width="400" src= "/Pics/uc4.png"> </p>
 
 From the above, we observe that a higher value for our sampling techniques is better.
 
