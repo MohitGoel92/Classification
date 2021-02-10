@@ -890,3 +890,63 @@ From the above, we observe that a higher value for our sampling technique is bet
 
 ### Modelling Approaches
 
+- General sklearn approaches. By default, the hyperparameter called class weight is usually set to none, however it can also be set to balance. This string helps to balance out the error attributed to our minority and majority classes.
+- Oversampling the minority class.
+- Undersampling the majority class.
+- A combination of oversampling and undersampling.
+- Ensemble methods to leverage the oversampling or undersampling techniques to ensure balance between each one of the classes.
+
+### Weighting
+
+- Many models allow weighted observations.
+- We adjust these total weights so they are equal across classes.
+- It is easy to do when available.
+- There is no need to sacrifice data such as with undersampling or oversampling.
+
+### Random and Synthetic Oversampling
+
+**Random Oversampling:**
+
+- Simplest oversampling approach.
+- Resample with replacement from minority class.
+- No concerns about geometry of feature space.
+- Good for categorical data.
+
+**Synthetic Oversampling:**
+
+- We create new samples of the minority class that do not exist yet.
+- Start with a point in the minority class.
+- Choose one of k-nearest neighbours.
+- Add a new point between them. Repeat this for each one of the number of neighbours that we have set out. If we have k-neighbours when the number of neighbours is 3, we do this for all three of the points.
+- There are 2 main approaches:
+  - SMOTE
+  - ADASYN
+
+### SMOTE: Synthetic Minority Oversampling Technique
+
+**Regular:** Connect minority class points to any neighbour (even other classes). We generate the new points between the connected points on the connected lines.
+
+**Borderline:** Classify points as outliers, safe, or in-danger.
+  - Outliers: Neighbours that are from a different class.
+  - Safe: All neighbours are from the same class.
+  - In-danger: At least half of the nearest neighbours are from the same class but they're all not from the same class (2 out of 3 are from the same class).
+
+**Borderline 1 SMOTE:** Connect the minority of in-danger points only to minority points.
+
+**Borderline 2 SMOTE:** Connect the minority in-danger points to whatever is nearby.
+
+**SVM SMOTE:** Use minority support vectors to generate new points.
+
+For both the Borderline and SVM SMOTE, a neighbourhood is defined using the parameters and neighbours to decide the number of neighbours to use and to decide whether a sample is in-danger, whether it is safe or whether it in an outlier.
+
+### ADASYN: ADAptive SYNthetic sampling
+
+For each minority point:
+
+- Look at the classes in the neighbourhood of each minority point.
+- Generate new samples proportional to the competing classes.
+
+Therefore with ADASYN, more samples will be generated in the area that the nearest neighbour rule is not respected, thus putting more weight on values that would have been originally misclassified.
+
+**Note:** All of these are motivated by K-Nearest Neighbours, but these oversampling techniques will help with any classification for which balance is an issue.
+
