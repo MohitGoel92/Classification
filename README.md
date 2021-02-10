@@ -950,3 +950,16 @@ Therefore with ADASYN, more samples will be generated in the area that the neare
 
 **Note:** All of these are motivated by K-Nearest Neighbours, but these oversampling techniques will help with any classification for which balance is an issue.
 
+### Nearest Neighbour Methods
+
+**Undersampling:** Decreasing the size of the majority class so that it is similar in size to the minority class.
+
+**NearMiss-1:**
+
+- We keep the points that are closest to the nearby minority points.
+- We keep points that are near the decision boundaries.
+
+The diagrams below illustrate this.
+
+<p align="center"> <img width="550" src= "/Pics/uc6.png"> </p>
+
