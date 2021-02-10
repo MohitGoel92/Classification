@@ -974,3 +974,9 @@ The diagrams below illustrate this.
 
 **Note:** This type of downsampling can still be impacted by marginal outliers, so it is not perfect.
 
+**NearMiss-3:**
+
+We keep the points that are closest to the majority neighbours of minority points. This is a two-step algorithm. Firstly, we take the nearest neighbours, and then we take the largest distance. Thus we are taking points that are a but further apart from one another. This version is therefore less affected by noise, so it will not be as impacted by outliers.
+
+<p align="center"> <img width="850" src= "/Pics/uc8.png"> </p>
+
