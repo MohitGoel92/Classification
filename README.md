@@ -956,8 +956,7 @@ Therefore with ADASYN, more samples will be generated in the area that the neare
 
 **NearMiss-1:**
 
-- We keep the points that are closest to the nearby minority points.
-- We keep points that are near the decision boundaries.
+Here we keep the points that are closest to the nearby minority points. We keep the points that are near the decision boundaries.
 
 The diagrams below illustrate this.
 
@@ -967,4 +966,11 @@ The diagrams below illustrate this.
 
 **NearMiss-2:**
 
-<p align="center"> <img width="850" src= "/Pics/uc6.png"> </p>
+We keep the points that are closest to the distant minority points. These are not as affected by outliers since it does not focus on minimising the distance to the nearest samples, but rather minimising the distance from the farthest samples. Looking to minimise the distance to the farthest samples can help reduce the effects of noise here.
+
+The diagrams below illustrate this.
+
+<p align="center"> <img width="850" src= "/Pics/uc7.png"> </p>
+
+**Note:** This type of downsampling can still be impacted by marginal outliers, so it is not perfect.
+
