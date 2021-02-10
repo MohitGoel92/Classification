@@ -983,3 +983,22 @@ The diagrams below illustrate this.
 <p align="center"> <img width="850" src= "/Pics/uc9.png"> </p>
 
 First, it's going to be for each negative sample. We're going to find the K-nearest neighbors of the positive class, then the positive samples selected are going to be the ones for which the average distance to the N-nearest neighbors is the largest. So first, we only take the nearest neighbors, and then we take the largest distance. Thus we are then taking points that are a bit further apart from one another.
+
+**Tomek Links: Mixed Mutual Nearest Neighbours**
+
+A Tomek link exists if two samples from different classes are the nearest neighbours of one another. 
+
+The diagrams below illustrates this.
+
+<p align="center"> <img width="850" src= "/Pics/uc10.png"> </p>
+
+Now, we can either remove one of the classes or both. The main point of this being that we remove points of different classes that are too close together, and create more distinct classes. Then finally, we have edited nearest neigbours. Essentially, we are K-Nearest Neighbours with k=1. That way, if we misclassify a point in one of the majority classes, that point will be removed. We end up with clusters that are more distinct.
+
+**Edited Nearest Neighbours:**
+
+Essentially, we are running K-Nearest Neighbours with k=1. We end up with clusters that are more distinct.
+
+The diagrams below illustrates this.
+
+<p align="center"> <img width="850" src= "/Pics/uc11.png"> </p>
+
