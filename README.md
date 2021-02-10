@@ -961,5 +961,5 @@ Therefore with ADASYN, more samples will be generated in the area that the neare
 
 The diagrams below illustrate this.
 
-<p align="center"> <img width="550" src= "/Pics/uc6.png"> </p>
+<p align="center"> <img width="750" src= "/Pics/uc6.png"> </p>
 
