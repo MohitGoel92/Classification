@@ -963,3 +963,8 @@ The diagrams below illustrate this.
 
 <p align="center"> <img width="850" src= "/Pics/uc6.png"> </p>
 
+**Note:** This type of downsampling can easily be skewed by the presence of some outliers or some noise. This may result in decision boundaries that we do not want optimally as it may be easily thrown off by outliers.
+
+**NearMiss-2:**
+
+<p align="center"> <img width="850" src= "/Pics/uc6.png"> </p>
