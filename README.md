@@ -980,6 +980,6 @@ We keep the points that are closest to the majority neighbours of minority point
 
 The diagrams below illustrate this.
 
-<p align="center"> <img width="850" src= "/Pics/uc8.png"> </p>
+<p align="center"> <img width="850" src= "/Pics/uc9.png"> </p>
 
 First, it's going to be for each negative sample. We're going to find the K-nearest neighbors of the positive class, then the positive samples selected are going to be the ones for which the average distance to the N-nearest neighbors is the largest. So first, we only take the nearest neighbors, and then we take the largest distance. Thus we are then taking points that are a bit further apart from one another.
