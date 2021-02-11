@@ -1035,3 +1035,7 @@ The diagram below illustrates this.
   - **F1 Score:** This will always balance out the precision and recall, and will penalise us strongly for getting either of these two too low for our given class. Unlike accuracy, it will not be skewed by unbalanced classes assuming we are testing it for that minority class, that precision or recall for the minority class.
   - **Cohen's Kappa:** This is best suited towards team work as it is a measure of agreement between two different rates, or two different models performing classification. The goal is to come up with a ratio of observed agreement between the models as compared to theh probability of there being an agreement by chance. The higher the value for Cohen's Kappa, the more you can trust the agreed upon predictions of the two models.
   - **Not Accuracy:** Accuracy can be misleading when working with unbalanced classes.
+  
+**Note:** Downsampling is likely to decrease precision.
+**Note:** Random upsampling preserves all the original observations.
+**Note:** Synthetic upsampling generates observations that were not part of the orginal data.
