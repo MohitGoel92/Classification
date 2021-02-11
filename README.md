@@ -1010,3 +1010,17 @@ We may use SMOTE to upsample and then remove the noise to our objects and not ha
 
 ### Blagging (Balanced Bagging):
 
+Blagging steps:
+- Take bootstrap samples from the original population.
+- Balance each sample by downsampling.
+- Learn a decision tree from each.
+- Majority vote.
+
+**Result:** Bagged decision trees learn't on balanced populations.
+
+The diagram below illustrates this.
+
+<p align="center"> <img width="850" src= "/Pics/uc12.png"> </p>
+
+**Note:** This will allow more weight to be attributed to the minority class, ensuring we have more of a balanced decision being made.
+
