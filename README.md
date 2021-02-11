@@ -1002,3 +1002,11 @@ The diagrams below illustrates this.
 
 <p align="center"> <img width="850" src= "/Pics/uc11.png"> </p>
 
+### Combination of Undersampling and Oversampling
+
+**SMOTE and Tomek's Link:**
+
+We may use SMOTE to upsample and then remove the noise to our objects and not have to upsample too heavily. We can downsample some of our majority classes by removing points using either Tomek's link or by using Editied Nearest Neighbours.
+
+### Blagging (Balanced Bagging):
+
