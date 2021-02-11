@@ -1024,3 +1024,14 @@ The diagram below illustrates this.
 
 **Note:** This will allow more weight to be attributed to the minority class, ensuring we have more of a balanced decision being made.
 
+### Unbalanced Classes: Steps to Keep in Mind
+
+- Oversampling and Undersampling happens after the stratified train and test split (StratifiedShuffleSplit). If we perform oversampling first, we may have values that are present in both the training set and test set. This suggests we may easily overfit the dataset, have data leakage and even if we are synthetically creating these new samples, those values will be very close to those in the train and test samples; we may therefore still have overfitting.
+
+- We must use sensible metrics:
+
+  - **AUC:** Tradeoff between the true positive rate and the false positive rate for our minority class. We can observe this for different thresholds as we get a clear picture of that particular classification method. We may get an idea of what threshold is optimal for our busines objective.
+  **Note:** The same thing can be said for the precision-recall curve as well.
+  - **F1 Score:** This will always balance out the precision and recall, and will penalise us strongly for getting either of these two too low for our given class. Unlike accuracy, it will not be skewed by unbalanced classes assuming we are testing it for that minority class, that precision or recall for the minority class.
+  - **Cohen's Kappa:** This is best suited towards team work as it is a measure of agreement between two different rates, or two different models performing classification. The goal is to come up with a ratio of observed agreement between the models as compared to theh probability of there being an agreement by chance. The higher the value for Cohen's Kappa, the more you can trust the agreed upon predictions of the two models.
+  - **Not Accuracy:** Accuracy can be misleading when working with unbalanced classes.
