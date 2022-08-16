@@ -1037,5 +1037,7 @@ The diagram below illustrates this.
   - **Not Accuracy:** Accuracy can be misleading when working with unbalanced classes.
   
 **Note:** Downsampling is likely to decrease precision.
+
 **Note:** Random upsampling preserves all the original observations.
+
 **Note:** Synthetic upsampling generates observations that were not part of the orginal data.
